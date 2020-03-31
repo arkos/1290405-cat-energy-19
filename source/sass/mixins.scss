@@ -1,0 +1,3 @@
+@mixin font-family($font, $fallback: "Arial") {
+  font-family: $font, $fallback, sans-serif;
+}
