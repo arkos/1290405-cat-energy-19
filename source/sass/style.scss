@@ -1,6 +1,9 @@
 /* normalize */
 @import "normalize.scss";
 
+/* utils */
+@import "blocks/utils.scss";
+
 /* header */
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
@@ -24,5 +27,3 @@
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 
-/* utils */
-@import "blocks/utils.scss";
