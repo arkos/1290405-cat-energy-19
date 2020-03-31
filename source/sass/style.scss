@@ -10,6 +10,9 @@
 /* mixins */
 @import "mixins.scss";
 
+/* globals */
+@import "globals.css";
+
 /* header */
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
@@ -32,4 +35,3 @@
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-
