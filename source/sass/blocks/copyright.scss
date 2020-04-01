@@ -1,0 +1,8 @@
+.copyright {
+  @include font-family($secondary-font, "Tahoma");
+  font-size: 16px;
+}
+
+.copyright__link {
+  color: #444444;
+}
