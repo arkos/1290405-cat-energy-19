@@ -1,0 +1,19 @@
+.programs__item-title {
+  font-size: 24px;
+  line-height: 37px;
+  color: #111111;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.programs__item-description {
+  @include font-family($secondary-font, "Tahoma");
+  line-height: 18px;
+  color: #444444;
+}
+
+.programs__item-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #111111;
+}
