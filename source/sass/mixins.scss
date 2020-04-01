@@ -1,3 +1,19 @@
 @mixin font-family($font, $fallback: "Arial") {
   font-family: $font, $fallback, sans-serif;
 }
+
+@mixin container {
+  width: $small-size;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  /* @include breakpoint($tablet) {
+    width: $medium-size;
+    padding: 0 20px;
+  }
+
+  @include breakpoint($desktop) {
+    width: $large-size;
+    padding: 0 30px;
+  } */
+}

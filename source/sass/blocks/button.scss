@@ -4,6 +4,11 @@
   background-color: $primary-color;
   color: #ffffff;
   border: none;
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 73px;
+  padding-right: 73px;
 
   &--secondary {
     color: #444444;
