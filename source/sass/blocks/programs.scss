@@ -4,16 +4,28 @@
   color: #111111;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 0;
 }
 
 .programs__item-description {
   @include font-family($secondary-font, "Tahoma");
   line-height: 18px;
   color: #444444;
+  margin: 0;
 }
 
 .programs__item-link {
   font-size: 16px;
   text-transform: uppercase;
   color: #111111;
+}
+
+.programs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.programs__item {
+  background-color: #f2f2f2;
 }

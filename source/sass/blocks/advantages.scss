@@ -2,10 +2,18 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
+  margin: 0;
 }
 
 .advantages__item-text {
   line-height: 18px;
   @include font-family($secondary-font, "Tahoma");
   color: #444444;
+  margin: 0;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
