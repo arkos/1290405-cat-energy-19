@@ -5,6 +5,8 @@
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
+  margin-left: 92px;
+  margin-bottom: 36px;
 }
 
 .programs__item-description {
@@ -12,6 +14,7 @@
   line-height: 18px;
   color: #444444;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .programs__item-link {
@@ -28,6 +31,15 @@
 
 .programs__item {
   background-color: #f2f2f2;
+  padding-top: 39px;
+  padding-bottom: 22px;
+  padding-left: 21px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+
+.programs__item:last-child {
+  margin-bottom: 0;
 }
 
 .programs__wrapper {

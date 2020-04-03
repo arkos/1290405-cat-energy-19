@@ -1,3 +1,11 @@
 .footer__wrapper {
   @include container();
 }
+
+.footer__logo {
+  display: block;
+  text-align: center;
+  padding-top: 39px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid #000000;
+}

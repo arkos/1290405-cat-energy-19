@@ -9,6 +9,7 @@
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+
   @include font-family($secondary-font, "Tahoma");
 }
 
