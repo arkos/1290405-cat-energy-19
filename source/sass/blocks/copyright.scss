@@ -1,10 +1,24 @@
 .copyright {
   @include font-family($secondary-font, "Tahoma");
   font-size: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 31px;
+  padding-bottom: 37px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyright__link {
   color: #444444;
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.copyright__logo-image {
+  width: 27px;
+  height: 34px;
+}
+
+.copyright__logo-path {
+  fill: #444444;
 }

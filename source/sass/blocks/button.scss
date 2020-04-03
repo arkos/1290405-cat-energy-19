@@ -1,14 +1,17 @@
 .button {
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
   background-color: $primary-color;
   color: #ffffff;
   border: none;
   display: block;
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-left: 73px;
-  padding-right: 73px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 16px;
+  line-height: 20px;
 
   &--secondary {
     color: #444444;
