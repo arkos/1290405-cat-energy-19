@@ -1,12 +1,17 @@
 body {
   @include font-family($primary-font);
 
+  min-width: 320px;
   margin: 0;
-  background-color: $white-color;
+  padding: 0;
 
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1;
+  color: $black-color;
+  font-style: normal;
+
+  background-color: $white-color;
 }
 
 img {
