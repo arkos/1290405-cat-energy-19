@@ -10,7 +10,7 @@
   line-height: 18px;
 
   @include font-family($secondary-font, "Tahoma");
-  color: #444444;
+  color: $dark-grey-color;
   margin: 0;
 }
 

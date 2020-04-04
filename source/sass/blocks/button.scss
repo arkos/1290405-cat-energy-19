@@ -3,7 +3,7 @@
   text-transform: uppercase;
   text-align: center;
   background-color: $primary-color;
-  color: #ffffff;
+  color: $white-color;
   border: none;
   display: block;
   padding-top: 11px;
@@ -12,7 +12,7 @@
   padding-right: 60px;
 
   &--secondary {
-    color: #444444;
-    background-color: #f2f2f2;
+    color: $dark-grey-color;
+    background-color: $light-grey-color;
   }
 }

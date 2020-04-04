@@ -3,7 +3,7 @@
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $primary-text-color;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -18,7 +18,7 @@
 }
 
 .site-list__item-link {
-  color: #000000;
+  color: $primary-text-color;
   display: block;
   text-align: center;
   padding-top: 24px;

@@ -1,7 +1,7 @@
 .programs__item-title {
   font-size: 24px;
   line-height: 37px;
-  color: #111111;
+  color: $black-color;
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
@@ -12,7 +12,7 @@
 .programs__item-description {
   @include font-family($secondary-font, "Tahoma");
   line-height: 18px;
-  color: #444444;
+  color: $dark-grey-color;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -20,7 +20,7 @@
 .programs__item-link {
   font-size: 16px;
   text-transform: uppercase;
-  color: #111111;
+  color: $black-color;
 }
 
 .programs__list {
@@ -30,7 +30,7 @@
 }
 
 .programs__item {
-  background-color: #f2f2f2;
+  background-color: $light-grey-color;
   padding-top: 39px;
   padding-bottom: 22px;
   padding-left: 21px;
