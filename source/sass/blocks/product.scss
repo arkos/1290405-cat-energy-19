@@ -21,6 +21,7 @@
 
 .product__details {
   @include font-family($secondary-font, "Tahoma");
+
   font-size: 12px;
   line-height: 16px;
   color: $dark-grey-color;

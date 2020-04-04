@@ -11,6 +11,7 @@
 
 .programs__item-description {
   @include font-family($secondary-font, "Tahoma");
+
   line-height: 18px;
   color: $dark-grey-color;
   margin: 0;

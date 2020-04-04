@@ -14,14 +14,14 @@
 }
 
 .show-more__description {
+  @include font-family($secondary-font, "Tahoma");
+
   font-size: 12px;
   line-height: 16px;
   color: $dark-grey-color;
   text-align: center;
   margin: 0;
   margin-top: 11px;
-
-  @include font-family($secondary-font, "Tahoma");
 }
 
 .show-more__icon {

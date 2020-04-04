@@ -7,9 +7,10 @@
 }
 
 .advantages__item-text {
+  @include font-family($secondary-font, "Tahoma");
+
   line-height: 18px;
 
-  @include font-family($secondary-font, "Tahoma");
   color: $dark-grey-color;
   margin: 0;
 }
