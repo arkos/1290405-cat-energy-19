@@ -1,3 +1,20 @@
-.nav__wrapper {
-  // @include container();
+.nav {
+  min-height: 200px;
+}
+
+@media (min-width: $medium-size) {
+  .nav {
+    display: flex;
+    width: 450px;
+
+    // temp styles
+    min-height: 85px;
+  }
+}
+
+@media (min-width: $large-size) {
+  .nav {
+    // temp styles
+    min-height: 130px;
+  }
 }
