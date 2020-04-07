@@ -1,0 +1,14 @@
+.intro__wrapper {
+  @include container();
+}
+
+.intro__promo {
+  padding-top: 30px;
+}
+
+.intro__product-image {
+  margin-top: -150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

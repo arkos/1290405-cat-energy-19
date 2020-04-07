@@ -1,0 +1,42 @@
+.product__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__content {
+  display: flex;
+}
+
+.product__title {
+  font-size: 16px;
+  line-height: 20px;
+  color: $black-color;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-right: 65px;
+  margin: 0;
+}
+
+.product__details {
+  @include font-family($secondary-font, "Tahoma");
+
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey-color;
+}
+
+.product__details-value {
+  text-align: right;
+}
+
+.product__action {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 110px;
+  padding-right: 110px;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}

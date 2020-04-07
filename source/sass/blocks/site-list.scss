@@ -1,0 +1,27 @@
+.site-list {
+  @include font-family($primary-font);
+
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  border-bottom: 1px solid $border-color;
+}
+
+.site-list__item:first-child {
+  border-top: 1px solid $border-color;
+}
+
+.site-list__item-link {
+  color: $primary-text-color;
+  display: block;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}

@@ -1,0 +1,41 @@
+.show-more {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.show-more__title {
+  font-size: 16px;
+  line-height: 20px;
+  color: $primary-text-color;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.show-more__description {
+  @include font-family($secondary-font, "Tahoma");
+
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey-color;
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.show-more__icon {
+  border: none;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  display: block;
+}
+
+.show-more__show-all {
+  padding-left: 95px;
+  padding-right: 95px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 20px;
+}

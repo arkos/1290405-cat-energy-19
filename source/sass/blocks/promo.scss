@@ -1,0 +1,21 @@
+.promo {
+  // background-color: #63a73a;
+  color: $white-color;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  min-height: 305px;
+}
+
+.promo__description {
+  margin: 0;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.promo__slogan {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}

@@ -1,0 +1,19 @@
+.footer {
+  background-color: $light-grey-color;
+}
+
+.footer__wrapper {
+  @include container();
+}
+
+.footer__logo {
+  display: block;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer__social {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
