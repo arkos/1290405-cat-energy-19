@@ -21,6 +21,7 @@
 @media (min-width: $medium-size) {
   .footer__wrapper {
     display: flex;
+    justify-content: space-between;
   }
 
   .footer__logo {
