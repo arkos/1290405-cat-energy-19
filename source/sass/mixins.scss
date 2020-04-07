@@ -7,13 +7,13 @@
   margin: 0 auto;
   padding: 0 20px;
 
-  /* @include breakpoint($tablet) {
+  @media (min-width: $medium-size) {
     width: $medium-size;
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
-  @include breakpoint($desktop) {
+  @media (min-width: $large-size) {
     width: $large-size;
-    padding: 0 30px;
-  } */
+    padding: 0 100px;
+  }
 }

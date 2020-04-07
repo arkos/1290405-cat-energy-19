@@ -7,7 +7,6 @@
   width: auto;
 }
 
-
 .header__logo-wrapper {
   width: 320px;
   margin: 0 auto;
@@ -22,6 +21,7 @@
 @media (min-width: $medium-size) {
   .header {
     flex-direction: row;
+    margin-top: 25px;
   }
 
   .header__logo-wrapper {
@@ -31,15 +31,19 @@
   }
 
   .header__logo {
-    height: 85px;
+    width: 174px;
+    height: 59px;
   }
 
+  .header__logo-image {
+    display: block;
+  }
 
   .header__wrapper {
+    @include container();
+
     display: flex;
     justify-content: space-between;
-    width: 708px;
-    margin: 0 auto;
   }
 }
 

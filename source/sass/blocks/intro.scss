@@ -12,3 +12,21 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (min-width: $medium-size) {
+  .intro__promo {
+    padding-left: 90px;
+    width: 515px;
+  }
+
+  .intro__product-image {
+    display: none;
+  }
+
+  .intro__button {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 245px;
+    margin-top: 60px;
+  }
+}
