@@ -7,3 +7,9 @@
     display: none;
   }
 }
+
+@media (min-width: $large-size) {
+  .nav {
+    width: 485px;
+  }
+}
