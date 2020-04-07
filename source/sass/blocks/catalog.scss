@@ -12,3 +12,25 @@
 .catalog__item:first-child {
   border-top: 1px solid $border-color;
 }
+
+@media (min-width: $medium-size) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    width: 325px;
+    margin: 0;
+    margin-right: 60px;
+    margin-top: 140px;
+    border: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: $light-grey-color;
+  }
+
+  .catalog__item:first-child {
+    border-top: none;
+  }
+}

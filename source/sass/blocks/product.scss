@@ -40,3 +40,38 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+@media (min-width: $medium-size) {
+  .product__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__title {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .product__action {
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+
+  .product__details {
+    width: 245px;
+  }
+
+  .product__details td {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product__image {
+    display: block;
+    margin: 0;
+    margin-top: -65px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
