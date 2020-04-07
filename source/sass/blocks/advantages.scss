@@ -61,3 +61,18 @@
     color: $dark-grey-color;
   }
 }
+
+@media (min-width: $large-size) {
+  .advantages__item {
+    width: 235px;
+    margin-right: 80px;
+  }
+
+  .advantages__item:nth-child(2n) {
+    margin-right: 80px;
+  }
+
+  .advantages__item:nth-child(4n) {
+    margin-right: 0;
+  }
+}
