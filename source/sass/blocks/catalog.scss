@@ -22,7 +22,7 @@
   .catalog__item {
     width: 325px;
     margin: 0;
-    margin-right: 60px;
+    margin-right: 55px;
     margin-top: 140px;
     border: none;
     padding-left: 40px;
@@ -32,5 +32,13 @@
 
   .catalog__item:first-child {
     border-top: none;
+  }
+
+  .catalog__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .catalog__wrapper {
+    @include container();
   }
 }
