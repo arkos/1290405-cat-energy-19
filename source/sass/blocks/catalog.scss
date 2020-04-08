@@ -56,5 +56,7 @@
 }
 
 .catalog__wrapper {
-  @include container();
+  @include md-size {
+    @include container();
+  }
 }
