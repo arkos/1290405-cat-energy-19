@@ -4,6 +4,11 @@
 
 .intro__promo {
   padding-top: 30px;
+
+  @include md-size {
+    padding-left: 90px;
+    width: 515px;
+  }
 }
 
 .intro__product-image {
@@ -11,23 +16,16 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  @include md-size {
+    display: none;
+  }
 }
 
 .intro__button {
   margin-top: 260px;
-}
 
-@media (min-width: $medium-size) {
-  .intro__promo {
-    padding-left: 90px;
-    width: 515px;
-  }
-
-  .intro__product-image {
-    display: none;
-  }
-
-  .intro__button {
+  @include md-size {
     font-size: 20px;
     padding-left: 25px;
     padding-right: 25px;
