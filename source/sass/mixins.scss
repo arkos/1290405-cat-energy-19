@@ -2,17 +2,35 @@
   font-family: $font, $fallback, sans-serif;
 }
 
+@mixin sm-size() {
+  @media (min-width: $small-size) {
+    @content;
+  }
+}
+
+@mixin md-size() {
+  @media (min-width: $medium-size) {
+    @content;
+  }
+}
+
+@mixin lg-size() {
+  @media (min-width: $large-size) {
+    @content;
+  }
+}
+
 @mixin container {
   width: $small-size;
   margin: 0 auto;
   padding: 0 20px;
 
-  @media (min-width: $medium-size) {
+  @include md-size {
     width: $medium-size;
     padding: 0 30px;
   }
 
-  @media (min-width: $large-size) {
+  @include lg-size {
     width: $large-size;
     padding: 0 40px;
   }
