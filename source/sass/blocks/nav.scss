@@ -1,15 +1,15 @@
-@media (min-width: $medium-size) {
-  .nav {
+.nav {
+  @include md-size {
     width: 440px;
   }
 
-  .nav__toggle {
-    display: none;
+  @include lg-size {
+    width: 485px;
   }
 }
 
-@media (min-width: $large-size) {
-  .nav {
-    width: 485px;
+.nav__toggle {
+  @include md-size {
+    display: none;
   }
 }
