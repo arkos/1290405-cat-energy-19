@@ -1,3 +1,15 @@
-.nav__wrapper {
-  // @include container();
+@media (min-width: $medium-size) {
+  .nav {
+    width: 440px;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $large-size) {
+  .nav {
+    width: 485px;
+  }
 }

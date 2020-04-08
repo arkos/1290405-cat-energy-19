@@ -17,3 +17,22 @@
 .footer__social {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+@media (min-width: $medium-size) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__logo {
+    width: 132px;
+  }
+
+  .footer__social {
+    width: 145px;
+  }
+
+  .footer__copyright {
+    width: 162px;
+  }
+}

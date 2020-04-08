@@ -4,7 +4,7 @@
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
-  color: $primary-text-color;
+  color: $black-color-primary;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -19,9 +19,39 @@
 }
 
 .site-list__item-link {
-  color: $primary-text-color;
+  color: $black-color-primary;
   display: block;
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+@media (min-width: $medium-size) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 25px;
+    justify-content: space-between;
+  }
+
+  .site-list__item:first-child {
+    border: none;
+  }
+
+  .site-list__item {
+    border: none;
+  }
+
+  .site-list__item-link {
+    color: $black-color-secondary;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: $large-size) {
+  .site-list {
+    font-size: 20px;
+  }
 }

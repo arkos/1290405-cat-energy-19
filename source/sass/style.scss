@@ -19,10 +19,12 @@
 @import "blocks/site-list.scss";
 
 /* main */
+
+// TODO: button paddings should be set in block elements
+@import "blocks/button.scss";
 @import "blocks/main.scss";
 @import "blocks/intro.scss";
 @import "blocks/promo.scss";
-@import "blocks/button.scss";
 @import "blocks/programs.scss";
 @import "blocks/advantages.scss";
 @import "blocks/container.scss";
@@ -36,3 +38,6 @@
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+
+/* temporary for styling */
+@import "outlines.scss";

@@ -6,7 +6,7 @@
 .show-more__title {
   font-size: 16px;
   line-height: 20px;
-  color: $primary-text-color;
+  color: $black-color-primary;
   text-transform: uppercase;
   margin: 0;
   margin-top: 25px;
@@ -38,4 +38,23 @@
   margin-top: 20px;
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: $medium-size) {
+  .show-more {
+    background-color: transparent;
+    border: 1px solid #e6e6e6;
+  }
+
+  .show-more__show-all {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+@media (min-width: $large-size) {
+  .show-more__show-all {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
