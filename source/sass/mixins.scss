@@ -23,15 +23,18 @@
 @mixin container {
   width: $small-size;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include md-size {
     width: $medium-size;
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @include lg-size {
     width: $large-size;
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
