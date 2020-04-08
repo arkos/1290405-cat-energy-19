@@ -43,7 +43,7 @@
 @media (min-width: $medium-size) {
   .show-more {
     background-color: transparent;
-    border: 1px solid #e6e6e6;
+    border: 1px solid $border-color-1;
   }
 
   .show-more__show-all {
