@@ -39,3 +39,15 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+@media (min-width: $medium-size) {
+  .show-more {
+    background-color: transparent;
+    border: 1px solid #e6e6e6;
+  }
+
+  .show-more__show-all {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
