@@ -75,3 +75,14 @@
     margin-right: auto;
   }
 }
+
+@media (min-width: $large-size) {
+  .product__details {
+    width: 170px;
+  }
+
+  .product__action {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}

@@ -51,3 +51,10 @@
     padding-right: 75px;
   }
 }
+
+@media (min-width: $large-size) {
+  .show-more__show-all {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
