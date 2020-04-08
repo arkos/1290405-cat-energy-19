@@ -4,6 +4,11 @@
 
 .footer__wrapper {
   @include container();
+
+  @include md-size {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__logo {
@@ -12,27 +17,22 @@
   padding-top: 40px;
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  @include md-size {
+    width: 132px;
+  }
 }
 
 .footer__social {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
 
-@media (min-width: $medium-size) {
-  .footer__wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .footer__logo {
-    width: 132px;
-  }
-
-  .footer__social {
+  @include md-size {
     width: 145px;
   }
+}
 
-  .footer__copyright {
+.footer__copyright {
+  @include md-size {
     width: 162px;
   }
 }
