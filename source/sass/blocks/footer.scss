@@ -1,5 +1,10 @@
 .footer {
   background-color: $light-grey-color;
+
+  @include md-size {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .footer__wrapper {
@@ -20,6 +25,7 @@
 
   @include md-size {
     width: 132px;
+    border-bottom: none;
   }
 }
 
@@ -28,6 +34,7 @@
 
   @include md-size {
     width: 145px;
+    border-bottom: none;
   }
 }
 
