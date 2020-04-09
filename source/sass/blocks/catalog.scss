@@ -2,13 +2,61 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @include md-size {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
 }
 
 .catalog__item {
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $border-color-2;
   padding-bottom: 25px;
+
+  @include md-size {
+    width: 325px;
+    margin: 0;
+    margin-right: 55px;
+    margin-top: 140px;
+    border: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: $light-grey-color;
+  }
+
+  @include lg-size {
+    width: 245px;
+    margin-right: 80px;
+  }
+
+  &:first-child {
+    border-top: 1px solid $border-color-2;
+
+    @include md-size {
+      border-top: none;
+    }
+  }
+
+  &:nth-child(2n) {
+    @include md-size {
+      margin-right: 0;
+    }
+
+    @include lg-size {
+      margin-right: 80px;
+    }
+  }
+
+  &:nth-child(4n) {
+    @include lg-size {
+      margin-right: 0;
+    }
+  }
 }
 
-.catalog__item:first-child {
-  border-top: 1px solid $border-color;
+.catalog__wrapper {
+  @include md-size {
+    @include container();
+  }
 }

@@ -1,12 +1,17 @@
 .show-more {
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @include md-size {
+    background-color: transparent;
+    border: 1px solid $border-color-1;
+  }
 }
 
 .show-more__title {
   font-size: 16px;
   line-height: 20px;
-  color: $primary-text-color;
+  color: $black-color-primary;
   text-transform: uppercase;
   margin: 0;
   margin-top: 25px;
@@ -38,4 +43,14 @@
   margin-top: 20px;
   font-size: 16px;
   line-height: 20px;
+
+  @include md-size {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @include lg-size {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }

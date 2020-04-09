@@ -4,24 +4,50 @@
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
-  color: $primary-text-color;
+  color: $black-color-primary;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include md-size {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 25px;
+    justify-content: space-between;
+  }
+
+  @include lg-size {
+    font-size: 20px;
+  }
 }
 
 .site-list__item {
-  border-bottom: 1px solid $border-color;
-}
+  border-bottom: 1px solid $border-color-2;
 
-.site-list__item:first-child {
-  border-top: 1px solid $border-color;
+  @include md-size {
+    border: none;
+  }
+
+  &:first-child {
+    border-top: 1px solid $border-color-2;
+
+    @include md-size {
+      border: none;
+    }
+  }
 }
 
 .site-list__item-link {
-  color: $primary-text-color;
+  color: $black-color-primary;
   display: block;
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @include md-size {
+    color: $black-color-secondary;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }

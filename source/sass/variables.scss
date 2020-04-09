@@ -6,12 +6,22 @@ $secondary-font: "Arial";
 // colors
 $white-color: #ffffff;
 $primary-color: #68b738;
-$border-color: #ededed;
 
-$black-color: #111111;
+$border-color-1: #e6e6e6;
+$border-color-2: #ededed;
+$border-color-3: #cdcdcd;
+$border-color-4: #d9d9d9;
+$border-color-5: #e7e7e7;
+
+$black-color-primary: #111111;
+$black-color-secondary: #222222;
 $dark-grey-color: #444444;
 $light-grey-color: #f2f2f2;
 
 $small-size: 320 * 1px;
 $medium-size: 768 * 1px;
 $large-size: 1300 * 1px;
+
+$small-container: 320 * 1px;
+$medium-container: 708 * 1px;
+$large-container: 1100 * 1px;
