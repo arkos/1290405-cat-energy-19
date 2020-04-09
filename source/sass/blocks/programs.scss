@@ -6,7 +6,7 @@
   font-weight: 400;
   margin: 0;
   margin-left: 90px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .programs__item-description {
@@ -15,13 +15,17 @@
   line-height: 18px;
   color: $dark-grey-color;
   margin: 0;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-color-4;
 }
 
 .programs__item-link {
   font-size: 16px;
   text-transform: uppercase;
   color: $black-color-primary;
+  padding-top: 20px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .programs__list {
@@ -37,10 +41,10 @@
 
 .programs__item {
   background-color: $light-grey-color;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 20px;
   padding-left: 20px;
-  padding-right: 30px;
+  padding-right: 20px;
   margin-bottom: 20px;
 
   @include lg-size {

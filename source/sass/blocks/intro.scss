@@ -1,5 +1,7 @@
 .intro__wrapper {
-  @include container();
+  @include md-size {
+    @include container();
+  }
 }
 
 .intro__promo {
@@ -12,7 +14,7 @@
 }
 
 .intro__product-image {
-  margin-top: -290px;
+  margin-top: -265px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -23,7 +25,10 @@
 }
 
 .intro__button {
-  margin-top: 260px;
+  @include container();
+  margin-top: 280px;
+  margin-bottom: 20px;
+  width: $small-size;
 
   @include md-size {
     font-size: 20px;

@@ -14,11 +14,8 @@
 }
 
 .header__wrapper {
-  width: auto;
-
   @include md-size {
     @include container();
-
     display: flex;
     justify-content: space-between;
   }
@@ -30,8 +27,10 @@
 }
 
 .header__logo-wrapper {
-  width: 320px;
-  margin: 0 auto;
+  @include container();
+
+  padding-top: 10px;
+  padding-bottom: 15px;
 
   @include md-size {
     width: 190px;
@@ -43,7 +42,7 @@
 .header__logo {
   display: inline-block;
   vertical-align: top;
-  height: 65px;
+  height: 40px;
 
   @include md-size {
     width: 175px;
