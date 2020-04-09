@@ -16,7 +16,7 @@
   text-align: center;
   padding-top: 40px;
   padding-bottom: 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid $border-color-4;
 
   @include md-size {
     width: 132px;
@@ -24,7 +24,7 @@
 }
 
 .footer__social {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid $border-color-4;
 
   @include md-size {
     width: 145px;
@@ -32,6 +32,9 @@
 }
 
 .footer__copyright {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   @include md-size {
     width: 162px;
   }
