@@ -15,4 +15,8 @@
 .main__advantages {
   margin-top: 15px;
   margin-bottom: 40px;
+
+  @include md-size {
+    margin-top: 50px;
+  }
 }
