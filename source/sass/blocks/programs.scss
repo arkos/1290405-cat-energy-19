@@ -13,6 +13,11 @@
     margin-left: 0;
     margin-bottom: 30px;
   }
+
+  @include lg-size {
+    margin-bottom: 80px;
+    margin-left: 215px;
+  }
 }
 
 .programs__item-description {
@@ -72,11 +77,11 @@
   }
 
   @include lg-size {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    padding-left: 55px;
+    padding-right: 55px;
     width: 570px;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
   }
 }
 
