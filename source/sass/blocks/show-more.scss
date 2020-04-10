@@ -6,6 +6,11 @@
     background-color: transparent;
     border: 1px solid $border-color-1;
   }
+
+  @include lg-size {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
 
 .show-more__title {
@@ -23,6 +28,11 @@
     padding-right: 35px;
     margin-top: 50px;
     margin-bottom: 25px;
+  }
+
+  @include lg-size {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
