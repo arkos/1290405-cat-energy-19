@@ -57,11 +57,16 @@
   height: 30px;
   margin: 0 auto;
   display: block;
+  background: transparent;
 
   @include md-size {
     width: 60px;
     height: 60px;
   }
+}
+
+.show-more__icon-polygon {
+  fill: $border-color-1;
 }
 
 .show-more__show-all {
