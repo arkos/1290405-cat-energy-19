@@ -34,6 +34,9 @@
 
   @include md-size {
     width: 245px;
+    padding: 0;
+    padding-top: 120px;
+    padding-left: 0;
     margin-bottom: 140px;
     margin-right: 180px;
   }
@@ -62,6 +65,12 @@
     }
   }
 
+  &:nth-last-child(2) {
+    @include md-size {
+      margin-bottom: 0;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -71,6 +80,12 @@
     height: 60px;
     background-color: $primary-color;
     background-position: center;
+    background-repeat: no-repeat;
+
+    @include md-size {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--healthy::before {
@@ -99,6 +114,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
+    padding-bottom: 55px;
   }
 }
 
