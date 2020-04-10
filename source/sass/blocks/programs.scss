@@ -60,6 +60,10 @@
     background-image: url("../../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @include md-size {
+      height: 20px;
+    }
   }
 }
 
