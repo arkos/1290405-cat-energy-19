@@ -32,10 +32,10 @@
 }
 
 .intro__button {
-  @include container();
+  width: 280px;
+  margin: 0 auto;
   margin-top: 300px;
   margin-bottom: 20px;
-  width: $small-size;
 
   @include md-size {
     font-size: 20px;
