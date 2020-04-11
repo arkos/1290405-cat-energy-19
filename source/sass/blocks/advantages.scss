@@ -118,19 +118,27 @@
   }
 
   &--healthy::after {
-    content: "1";
+    @include md-size {
+      content: "1";
+    }
   }
 
   &--easy::after {
-    content: "2";
+    @include md-size {
+      content: "2";
+    }
   }
 
   &--replace::after {
-    content: "3";
+    @include md-size {
+      content: "3";
+    }
   }
 
   &--result::after {
-    content: "4";
+    @include md-size {
+      content: "4";
+    }
   }
 }
 
