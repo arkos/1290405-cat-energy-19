@@ -3,6 +3,8 @@
 }
 
 .intro__wrapper {
+  position: relative;
+
   @include md-size {
     @include container();
   }
@@ -18,10 +20,11 @@
 }
 
 .intro__product-image {
-  margin-top: -265px;
+  position: absolute;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  top: 165px;
+  left: 20px;
+  margin: 0 auto;
 
   @include md-size {
     display: none;
@@ -30,7 +33,7 @@
 
 .intro__button {
   @include container();
-  margin-top: 280px;
+  margin-top: 300px;
   margin-bottom: 20px;
   width: $small-size;
 
