@@ -1,5 +1,9 @@
 .intro {
   margin-bottom: 80px;
+
+  @include lg-size {
+    margin-bottom: 200px;
+  }
 }
 
 .intro__wrapper {
@@ -29,6 +33,14 @@
   @include md-size {
     position: static;
     margin-top: -100px;
+  }
+
+  @include lg-size {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 260px;
+    margin: 0;
   }
 }
 
