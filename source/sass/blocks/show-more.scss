@@ -55,6 +55,7 @@
   border: none;
   width: 30px;
   height: 30px;
+  padding: 0;
   margin: 0 auto;
   display: block;
   background: transparent;
@@ -65,8 +66,17 @@
   }
 }
 
+.show-more__icon-image {
+  width: 100%;
+  height: auto;
+}
+
 .show-more__icon-polygon {
-  fill: $border-color-1;
+  fill: $border-color-6;
+
+  @include md-size {
+    fill: $border-color-1;
+  }
 }
 
 .show-more__show-all {
