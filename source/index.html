@@ -47,8 +47,11 @@
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
             <a href="form.html" class="button intro__button">Подобрать программу</a>
           </div>
-          <img class="intro__product-image" src="img/index-can-mobile@1x.png" width="280" height="270"
-            alt="Изображение банки кошачьего питания Кэт энерджи" />
+          <picture class="intro__product-image">
+            <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1300px)">
+            <source srcset="img/index-can-tablet@1x.jpg" media="(min-width: 768px)">
+            <img src="img/index-can-mobile@1x.png" alt="Изображение банки кошачьего питания Кэт энерджи" />
+          </picture>
         </div>
       </header>
     </section>

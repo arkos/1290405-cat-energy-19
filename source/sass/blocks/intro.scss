@@ -27,7 +27,8 @@
   margin: 0 auto;
 
   @include md-size {
-    display: none;
+    position: static;
+    margin-top: -100px;
   }
 }
 
@@ -38,6 +39,8 @@
   margin-bottom: 20px;
 
   @include md-size {
+    position: relative;
+    z-index: 20;
     font-size: 20px;
     line-height: 1;
     padding-left: 25px;
