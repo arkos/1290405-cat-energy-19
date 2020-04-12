@@ -5,7 +5,7 @@
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
-  margin-left: 90px;
+  margin-left: 71px;
   margin-bottom: 30px;
 
   @include md-size {
@@ -27,7 +27,7 @@
   color: $dark-grey-color;
   margin: 0;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   border-bottom: 1px solid $border-color-4;
 
   @include md-size {
@@ -163,7 +163,7 @@
   }
 
   &--pro::after {
-    left: 10px;
+    left: 14px;
     width: 65px;
     background-image: url("../../img/icon-cat-pro.svg");
 
