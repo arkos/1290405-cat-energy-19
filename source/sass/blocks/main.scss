@@ -15,6 +15,10 @@
 
 .main__programs {
   margin-top: 20px;
+
+  @include md-size {
+    margin-top: 0;
+  }
 }
 
 .main__advantages {
