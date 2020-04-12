@@ -102,12 +102,26 @@
     0 16px 0 0 $black-color-secondary;
 }
 
-.header--nav-closed .header__nav {
+.header--no-js .header__nav-toggle {
   display: none;
 }
 
+.header--nav-closed .header__nav {
+  @include sm-size-only {
+    display: none;
+  }
+}
+
+.header--no-js .header__nav {
+  @include sm-size-only {
+    display: block;
+  }
+}
+
 .header--nav-opened .header__nav {
-  display: block;
+  @include sm-size-only {
+    display: block;
+  }
 }
 
 .header--nav-opened .header__nav-toggle {

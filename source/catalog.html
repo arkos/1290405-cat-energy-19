@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header header--nav-closed header--no-js">
     <div class="header__wrapper">
       <div class="header__logo-wrapper">
         <a class="header__logo" href="index.html">
@@ -19,9 +19,9 @@
             <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип Кэт энерджи">
           </picture>
         </a>
+        <button class="header__nav-toggle" aria-label="Открыть меню"></button>
       </div>
       <nav class="header__nav nav">
-        <button class="header__nav-toggle" aria-label="Открыть меню"></button>
         <div class="nav__wrapper">
           <ul class="nav__menu site-list">
             <li class="site-list__item">
@@ -328,6 +328,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/blocks/header.js"></script>
 </body>
 
 </html>
