@@ -1,11 +1,14 @@
 .promo {
   color: $white-color;
   background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-color: $promo-background-color;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center 0;
+  background-size: contain;
 
   @include md-size {
     background-image: none;
+    background-color: transparent;
   }
 }
 
