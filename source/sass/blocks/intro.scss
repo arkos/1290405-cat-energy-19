@@ -1,5 +1,5 @@
 .intro {
-  margin-bottom: 80px;
+  margin-bottom: 22px;
 
   @include lg-size {
     margin-bottom: 200px;
@@ -26,9 +26,8 @@
 .intro__product-image {
   position: absolute;
   display: block;
-  top: 165px;
-  // left: 20px;
-  left: calc(50% - 145px);
+  top: 166px;
+  left: calc(50% - 140px);
   margin: 0 auto;
 
   @include md-size {
@@ -48,7 +47,7 @@
 .intro__button {
   width: 280px;
   margin: 0 auto;
-  margin-top: 135px;
+  margin-top: 136px;
   margin-bottom: 20px;
 
   @include md-size {

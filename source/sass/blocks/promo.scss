@@ -16,9 +16,10 @@
 
 .promo__description {
   margin: 0;
+  margin-top: -2px;
   font-size: 36px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   @include md-size {
     font-size: 60px;
