@@ -27,7 +27,8 @@
   position: absolute;
   display: block;
   top: 165px;
-  left: 20px;
+  // left: 20px;
+  left: calc(50% - 145px);
   margin: 0 auto;
 
   @include md-size {
