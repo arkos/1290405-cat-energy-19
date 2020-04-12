@@ -24,6 +24,8 @@ $small-size: 320 * 1px;
 $medium-size: 768 * 1px;
 $large-size: 1300 * 1px;
 
+$small-size-only: $medium-size - 1;
+
 $small-container: 320 * 1px;
 $medium-container: 708 * 1px;
 $large-container: 1100 * 1px;

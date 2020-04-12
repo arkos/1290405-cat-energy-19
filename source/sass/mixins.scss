@@ -20,6 +20,12 @@
   }
 }
 
+@mixin sm-size-only() {
+  @media (max-width: $small-size-only) {
+    @content;
+  }
+}
+
 @mixin container {
   width: $small-size;
   margin: 0 auto;
