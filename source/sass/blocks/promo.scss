@@ -5,10 +5,12 @@
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: contain;
+  min-height: 305px;
 
   @include md-size {
     background-image: none;
     background-color: transparent;
+    min-height: auto;
   }
 }
 

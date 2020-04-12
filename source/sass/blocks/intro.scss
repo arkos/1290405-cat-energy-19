@@ -48,7 +48,7 @@
 .intro__button {
   width: 280px;
   margin: 0 auto;
-  margin-top: 300px;
+  margin-top: 135px;
   margin-bottom: 20px;
 
   @include md-size {
@@ -63,5 +63,6 @@
     width: 245px;
     margin: 0;
     margin-top: 60px;
+    margin-left: 90px;
   }
 }
