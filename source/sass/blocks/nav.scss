@@ -7,9 +7,3 @@
     width: 480px;
   }
 }
-
-.nav__toggle {
-  @include md-size {
-    display: none;
-  }
-}
