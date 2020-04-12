@@ -27,6 +27,7 @@
 
   @include md-size {
     border: none;
+    margin-right: 20px;
   }
 
   &:first-child {
@@ -34,6 +35,12 @@
 
     @include md-size {
       border: none;
+    }
+  }
+
+  &:last-child {
+    @include md-size {
+      margin-right: 0;
     }
   }
 }
