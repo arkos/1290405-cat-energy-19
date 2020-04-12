@@ -19,7 +19,7 @@
 .footer__logo {
   display: block;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 38px;
   padding-bottom: 30px;
   border-bottom: 1px solid $border-color-4;
 
@@ -41,7 +41,7 @@
 }
 
 .footer__copyright {
-  padding-top: 30px;
+  padding-top: 23px;
   padding-bottom: 30px;
 
   @include md-size {
