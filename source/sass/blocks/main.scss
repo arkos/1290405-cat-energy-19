@@ -13,6 +13,10 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  @include lg-size {
+    margin-top: 76px;
+  }
 }
 
 .main__programs {

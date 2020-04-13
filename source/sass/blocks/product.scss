@@ -9,6 +9,10 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  @include lg-size {
+    width: 245px;
+  }
 }
 
 .product__content {
@@ -90,8 +94,11 @@
   }
 
   @include lg-size {
-    padding-left: 55px;
-    padding-right: 55px;
+    width: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 53px;
+    padding-right: 53px;
   }
 }
 
