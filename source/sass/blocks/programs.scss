@@ -15,8 +15,8 @@
   }
 
   @include lg-size {
-    margin-bottom: 70px;
-    margin-left: 165px;
+    margin-left: 161px;
+    margin-bottom: 74px;
   }
 }
 
@@ -36,6 +36,10 @@
     border-bottom: none;
 
     padding-bottom: 36px;
+  }
+
+  @include lg-size {
+    padding-bottom: 11px;
   }
 }
 
@@ -99,16 +103,20 @@
   }
 
   @include lg-size {
-    padding-top: 80px;
-    padding-bottom: 60px;
-    padding-left: 50px;
-    padding-right: 55px;
+    padding-top: 75px;
+    padding-bottom: 57px;
+    padding-left: 53px;
+    padding-right: 20px;
     width: 570px;
   }
 
   &--pro {
     @include md-size {
       padding-right: 314px;
+    }
+
+    @include lg-size {
+      padding-right: 30px;
     }
   }
 
@@ -133,7 +141,7 @@
     @include lg-size {
       width: 100px;
       height: 100px;
-      top: 60px;
+      top: 47px;
       left: 50px;
     }
   }
@@ -164,7 +172,7 @@
     }
 
     @include lg-size {
-      top: 50px;
+      top: 38px;
       left: 65px;
       width: 70px;
       height: 100px;
@@ -185,10 +193,10 @@
     }
 
     @include lg-size {
-      top: 80px;
-      left: 30px;
       width: 135px;
       height: 60px;
+      top: 65px;
+      left: 33px;
     }
   }
 }
