@@ -1,3 +1,9 @@
+.catalog {
+  @include md-size {
+    margin-top: 165px;
+  }
+}
+
 .catalog__list {
   list-style: none;
   margin: 0;
@@ -15,14 +21,14 @@
   padding-bottom: 23px;
 
   @include md-size {
-    width: 325px;
+    width: 324px;
     margin: 0;
-    margin-right: 55px;
-    margin-top: 140px;
+    margin-bottom: 140px;
+    margin-right: 60px;
+    padding-bottom: 39px;
+    padding-left: 0;
+    padding-right: 0;
     border: none;
-    padding-bottom: 35px;
-    padding-left: 40px;
-    padding-right: 40px;
     background-color: $light-grey-color;
   }
 
@@ -52,6 +58,18 @@
   &:nth-child(4n) {
     @include lg-size {
       margin-right: 0;
+    }
+  }
+
+  &:nth-last-child(2) {
+    @include md-size {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    @include md-size {
+      margin-bottom: 0;
     }
   }
 }
