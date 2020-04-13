@@ -25,6 +25,10 @@
     padding-left: 87px;
     width: 515px;
   }
+
+  @include lg-size {
+    padding-left: 80px;
+  }
 }
 
 .intro__product-image {
@@ -41,9 +45,9 @@
 
   @include lg-size {
     position: absolute;
-    top: 0;
+    top: 30px;
     left: auto;
-    right: 260px;
+    right: 258px;
     margin: 0;
   }
 }
@@ -67,5 +71,10 @@
     margin: 0;
     margin-top: 48px;
     margin-left: 87px;
+  }
+
+  @include lg-size {
+    margin-top: 55px;
+    margin-left: 80px;
   }
 }

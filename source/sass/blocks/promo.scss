@@ -28,6 +28,10 @@
     margin-top: 27px;
     margin-bottom: 40px;
   }
+
+  @include lg-size {
+    margin-top: 79px;
+  }
 }
 
 .promo__slogan {
