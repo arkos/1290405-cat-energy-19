@@ -45,8 +45,8 @@
 
   @include lg-size {
     width: 235px;
-    margin-right: 80px;
-    padding-top: 120px;
+    margin-right: 90px;
+    padding-top: 112px;
   }
 
   &:last-child {
@@ -57,7 +57,7 @@
     margin-right: 0;
 
     @include lg-size {
-      margin-right: 80px;
+      margin-right: 90px;
     }
   }
 
@@ -115,12 +115,20 @@
       line-height: 281px;
       color: $light-grey-color;
     }
+
+    @include lg-size {
+      right: -12px;
+    }
   }
 
   &--healthy::after {
     @include md-size {
       content: "1";
       right: 16px;
+    }
+
+    @include lg-size {
+      right: 7px;
     }
   }
 
