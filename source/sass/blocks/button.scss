@@ -22,5 +22,13 @@
   &--secondary {
     color: $dark-grey-color;
     background-color: $light-grey-color;
+
+    &:hover {
+      background-color: $light-grey-color-darker;
+    }
+
+    &:active {
+      color: rgba($dark-grey-color, 0.3);
+    }
   }
 }
