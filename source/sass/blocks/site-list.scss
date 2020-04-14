@@ -14,6 +14,7 @@
     flex-wrap: wrap;
     font-size: 18px;
     line-height: 25px;
+    font-weight: 400;
     justify-content: space-between;
   }
 
@@ -87,5 +88,19 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.site-list--main-page .site-list__item-link {
+  @include lg-size {
+    color: $white-color;
+  }
+}
+
+.site-list--main-page .site-list__item--active {
+  &::after {
+    @include lg-size {
+      background-color: $white-color;
+    }
   }
 }
