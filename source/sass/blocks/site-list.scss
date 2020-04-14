@@ -43,6 +43,23 @@
       margin-right: 0;
     }
   }
+
+  &--active {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+
+      height: 2px;
+
+      background: $primary-color;
+    }
+  }
 }
 
 .site-list__item-link {
@@ -56,5 +73,15 @@
     color: $black-color-secondary;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+.site-list__item-link[href] {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
