@@ -11,6 +11,23 @@
     flex-direction: row;
     margin-top: 53px;
   }
+
+  &--main-page {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 50%;
+      z-index: -1;
+      height: 696px;
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-color: $promo-background-color;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: cover;
+    }
+  }
 }
 
 .header__wrapper {
