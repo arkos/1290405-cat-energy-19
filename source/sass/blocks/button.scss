@@ -11,6 +11,14 @@
   padding-left: 60px;
   padding-right: 60px;
 
+  &:hover {
+    background-color: $grass-color;
+  }
+
+  &:active {
+    color: rgba($white-color, 0.3);
+  }
+
   &--secondary {
     color: $dark-grey-color;
     background-color: $light-grey-color;
