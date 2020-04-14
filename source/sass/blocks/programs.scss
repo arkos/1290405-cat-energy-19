@@ -48,13 +48,13 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $black-color-primary;
-  padding-right: 35px;
+  padding-right: 40px;
   display: inline-block;
   vertical-align: top;
 
   @include md-size {
     font-size: 20px;
-    padding-right: 46px;
+    padding-right: 50px;
   }
 
   &::after {
@@ -70,6 +70,27 @@
 
     @include md-size {
       height: 20px;
+    }
+  }
+
+  &:hover {
+    padding-right: 55px;
+
+    @include md-size {
+      padding-right: 65px;
+    }
+
+    &::after {
+      width: 40px;
+      background-image: url("../../img/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &:active {
+    color: rgba($black-color-primary, 0.3);
+
+    &::after {
+      opacity: 0.3;
     }
   }
 }
