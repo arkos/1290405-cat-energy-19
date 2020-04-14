@@ -45,19 +45,23 @@
   }
 
   &--active {
-    position: relative;
+    @include md-size {
+      position: relative;
+    }
 
     &::after {
-      content: "";
+      @include md-size {
+        content: "";
 
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      right: 0;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
 
-      height: 2px;
+        height: 2px;
 
-      background: $primary-color;
+        background: $primary-color;
+      }
     }
   }
 }
