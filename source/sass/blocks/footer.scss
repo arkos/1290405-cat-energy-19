@@ -17,8 +17,6 @@
 }
 
 .footer__logo {
-  display: block;
-  text-align: center;
   padding-top: 38px;
   padding-bottom: 30px;
   border-bottom: 1px solid $border-color-4;
@@ -26,16 +24,6 @@
   @include md-size {
     width: 132px;
     border-bottom: none;
-  }
-}
-
-.footer__logo[href] {
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
   }
 }
 
