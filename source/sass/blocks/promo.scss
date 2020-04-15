@@ -7,6 +7,10 @@
   background-size: contain;
   min-height: 305px;
 
+  @include retina-display {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+  }
+
   @include md-size {
     background-image: none;
     background-color: transparent;
