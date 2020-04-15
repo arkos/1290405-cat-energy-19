@@ -2,20 +2,27 @@
   @include font-family($secondary-font, "Tahoma");
 
   font-size: 16px;
-  display: flex;
-  justify-content: space-between;
 }
 
-.copyright__link {
+.copyright__logo {
   color: $dark-grey-color;
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:hover .copyright__logo-image {
+    fill: $primary-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__logo-image {
   width: 27px;
   height: 34px;
+  fill: $copyright-logo-color;
 }
 
 .copyright__logo-path {
