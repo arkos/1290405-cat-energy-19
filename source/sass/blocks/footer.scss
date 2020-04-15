@@ -6,10 +6,15 @@
   @include container();
 
   @include md-size {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 35px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @include lg-size {
+    padding-top: 57px;
+    padding-bottom: 60px;
   }
 }
 
@@ -23,6 +28,7 @@
     border-bottom: none;
     padding-top: 0;
     padding-bottom: 0;
+    margin-right: 30px;
   }
 }
 

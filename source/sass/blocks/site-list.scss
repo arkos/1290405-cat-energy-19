@@ -55,7 +55,7 @@
         content: "";
 
         position: absolute;
-        bottom: -2px;
+        bottom: 2px;
         left: 0;
         right: 0;
 
@@ -101,6 +101,7 @@
   &::after {
     @include lg-size {
       background-color: $white-color;
+      bottom: -1px;
     }
   }
 }
