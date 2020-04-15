@@ -28,6 +28,8 @@
 }
 
 .social__item-link svg {
+  fill: $copyright-logo-color;
+
   &:hover {
     fill: $primary-color;
   }
