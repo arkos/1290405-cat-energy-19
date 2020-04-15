@@ -29,6 +29,16 @@
   }
 }
 
+.footer__logo[href] {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .footer__social {
   border-bottom: 1px solid $border-color-4;
 
