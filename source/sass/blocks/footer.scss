@@ -1,16 +1,13 @@
 .footer {
   background-color: $light-grey-color;
-
-  @include md-size {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 }
 
 .footer__wrapper {
   @include container();
 
   @include md-size {
+    padding-top: 48px;
+    padding-bottom: 48px;
     display: flex;
     justify-content: space-between;
   }
@@ -24,25 +21,33 @@
   @include md-size {
     width: 132px;
     border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 .footer__social {
   border-bottom: 1px solid $border-color-4;
+  padding-top: 23px;
+  padding-bottom: 20px;
 
   @include md-size {
     width: 145px;
     display: flex;
     align-items: center;
     border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 .footer__copyright {
-  padding-top: 23px;
+  padding-top: 21px;
   padding-bottom: 30px;
 
   @include md-size {
     width: 162px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

@@ -2,12 +2,20 @@
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  min-height: 60px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 125px;
+  // width: 125px;
+}
+
+.social__item {
+  margin-right: 29px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__item-link {
