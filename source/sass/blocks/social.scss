@@ -21,4 +21,14 @@
     width: 30px;
     height: 30px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__item-link svg {
+  &:hover {
+    fill: $primary-color;
+  }
 }
