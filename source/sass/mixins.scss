@@ -44,3 +44,9 @@
     padding-right: 40px;
   }
 }
+
+@mixin retina-display {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
