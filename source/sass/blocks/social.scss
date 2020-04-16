@@ -1,7 +1,64 @@
 .social__list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  min-height: 60px;
-  border-bottom: 1px solid $border-color-2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @include md-size {
+    margin: 0;
+  }
+}
+
+.social__item {
+  margin-right: 29px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include md-size {
+    margin-right: 30px;
+  }
+}
+
+.social__item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__item-link svg {
+  fill: $logo-icon-color;
+
+  &:hover {
+    fill: $primary-color;
+  }
+}
+
+.social__item-link--vkontakte svg {
+  @include md-size {
+    width: 30px;
+    height: 16px;
+  }
+}
+
+.social__item-link--instagram svg {
+  @include md-size {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__item-link--facebook svg {
+  @include md-size {
+    width: 14px;
+    height: 28px;
+  }
 }

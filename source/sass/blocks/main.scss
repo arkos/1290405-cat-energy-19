@@ -1,17 +1,37 @@
 .main_title {
-  font-size: 35px;
+  font-size: 36px;
   line-height: 60px;
   color: $black-color-primary;
   font-weight: 400;
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 35px;
+  padding-top: 15px;
+  padding-bottom: 27px;
+
+  @include md-size {
+    font-size: 60px;
+    margin-top: 55px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  @include lg-size {
+    margin-top: 76px;
+  }
 }
 
 .main__programs {
   margin-top: 20px;
+
+  @include md-size {
+    margin-top: 0;
+  }
 }
 
 .main__advantages {
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+
+  @include md-size {
+    margin-top: 47px;
+  }
 }

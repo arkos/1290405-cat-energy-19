@@ -1,24 +1,36 @@
 .promo {
   color: $white-color;
   background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-color: $promo-background-color;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center 0;
+  background-size: contain;
+  min-height: 305px;
 
   @include md-size {
     background-image: none;
+    background-color: transparent;
+    min-height: auto;
   }
 }
 
 .promo__description {
   margin: 0;
+  margin-top: -2px;
   font-size: 36px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   @include md-size {
     font-size: 60px;
     color: $black-color-primary;
     text-align: left;
+    margin-top: 27px;
+    margin-bottom: 40px;
+  }
+
+  @include lg-size {
+    margin-top: 79px;
   }
 }
 

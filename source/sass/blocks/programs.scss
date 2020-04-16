@@ -5,8 +5,19 @@
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
-  margin-left: 90px;
-  margin-bottom: 35px;
+  margin-left: 71px;
+  margin-bottom: 30px;
+
+  @include md-size {
+    font-size: 36px;
+    margin-left: 0;
+    margin-bottom: 26px;
+  }
+
+  @include lg-size {
+    margin-left: 161px;
+    margin-bottom: 74px;
+  }
 }
 
 .programs__item-description {
@@ -16,12 +27,72 @@
   color: $dark-grey-color;
   margin: 0;
   margin-bottom: 20px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $border-color-4;
+
+  @include md-size {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+
+    padding-bottom: 36px;
+  }
+
+  @include lg-size {
+    padding-bottom: 11px;
+  }
 }
 
 .programs__item-link {
+  position: relative;
   font-size: 16px;
   text-transform: uppercase;
   color: $black-color-primary;
+  padding-right: 40px;
+  display: inline-block;
+  vertical-align: top;
+
+  @include md-size {
+    font-size: 20px;
+    padding-right: 50px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 15px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include md-size {
+      height: 20px;
+    }
+  }
+
+  &:hover {
+    padding-right: 55px;
+
+    @include md-size {
+      padding-right: 65px;
+    }
+
+    &::after {
+      width: 40px;
+      background-image: url("../../img/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &:active {
+    color: rgba($black-color-primary, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 .programs__list {
@@ -36,19 +107,118 @@
 }
 
 .programs__item {
+  position: relative;
   background-color: $light-grey-color;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 20px;
   padding-left: 20px;
-  padding-right: 30px;
+  padding-right: 20px;
   margin-bottom: 20px;
 
+  @include md-size {
+    padding-top: 75px;
+    padding-bottom: 60px;
+    padding-left: 53px;
+    padding-right: 275px;
+    margin-bottom: 33px;
+  }
+
   @include lg-size {
+    padding-top: 75px;
+    padding-bottom: 57px;
+    padding-left: 53px;
+    padding-right: 20px;
     width: 570px;
   }
 
-  &:last-child {
-    margin-bottom: 0;
+  &--pro {
+    @include md-size {
+      padding-right: 314px;
+    }
+
+    @include lg-size {
+      padding-right: 30px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $primary-color;
+
+    @include md-size {
+      top: 90px;
+      left: auto;
+      right: 60px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @include lg-size {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 50px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--slim::after {
+    top: 23px;
+    left: 20px;
+    width: 55px;
+    background-image: url("../../img/icon-cat-slim.svg");
+
+    @include md-size {
+      top: 80px;
+      left: auto;
+      right: 90px;
+      width: 140px;
+      height: 195px;
+    }
+
+    @include lg-size {
+      top: 38px;
+      left: 65px;
+      width: 70px;
+      height: 100px;
+    }
+  }
+
+  &--pro::after {
+    left: 14px;
+    width: 65px;
+    background-image: url("../../img/icon-cat-pro.svg");
+
+    @include md-size {
+      top: 130px;
+      left: auto;
+      right: 27px;
+      width: 270px;
+      height: 115px;
+    }
+
+    @include lg-size {
+      width: 135px;
+      height: 60px;
+      top: 65px;
+      left: 33px;
+    }
   }
 }
 

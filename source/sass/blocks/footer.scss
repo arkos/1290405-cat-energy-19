@@ -6,33 +6,54 @@
   @include container();
 
   @include md-size {
+    padding-top: 35px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @include lg-size {
+    padding-top: 57px;
+    padding-bottom: 60px;
   }
 }
 
 .footer__logo {
-  display: block;
-  text-align: center;
-  padding-top: 40px;
+  padding-top: 38px;
   padding-bottom: 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid $border-color-4;
 
   @include md-size {
     width: 132px;
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 30px;
   }
 }
 
 .footer__social {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid $border-color-4;
+  padding-top: 23px;
+  padding-bottom: 20px;
 
   @include md-size {
     width: 145px;
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 .footer__copyright {
+  padding-top: 21px;
+  padding-bottom: 30px;
+
   @include md-size {
     width: 162px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

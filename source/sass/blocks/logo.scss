@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__link {
+  display: block;
+}
+
+.logo__link[href] {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

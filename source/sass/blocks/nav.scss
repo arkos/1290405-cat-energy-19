@@ -4,12 +4,6 @@
   }
 
   @include lg-size {
-    width: 485px;
-  }
-}
-
-.nav__toggle {
-  @include md-size {
-    display: none;
+    width: 480px;
   }
 }

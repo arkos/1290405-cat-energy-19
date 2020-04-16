@@ -5,6 +5,12 @@
   @include md-size {
     background-color: transparent;
     border: 1px solid $border-color-1;
+    padding-top: 56px;
+  }
+
+  @include lg-size {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -16,6 +22,19 @@
   margin: 0;
   margin-top: 25px;
   text-align: center;
+
+  @include md-size {
+    font-size: 20px;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  @include lg-size {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
 }
 
 .show-more__description {
@@ -26,31 +45,67 @@
   color: $dark-grey-color;
   text-align: center;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 7px;
+
+  @include md-size {
+    font-size: 16px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @include lg-size {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .show-more__icon {
   border: none;
   width: 30px;
   height: 30px;
+  padding: 0;
   margin: 0 auto;
   display: block;
+  background: transparent;
+
+  @include md-size {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.show-more__icon-image {
+  width: 100%;
+  height: auto;
+}
+
+.show-more__icon-polygon {
+  fill: $border-color-6;
+
+  @include md-size {
+    fill: $border-color-1;
+  }
 }
 
 .show-more__show-all {
-  padding-left: 95px;
-  padding-right: 95px;
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 21px;
   font-size: 16px;
   line-height: 20px;
 
   @include md-size {
+    width: 245px;
     padding-left: 75px;
     padding-right: 75px;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @include lg-size {
     padding-left: 35px;
     padding-right: 35px;
+
+    width: 165px;
   }
 }

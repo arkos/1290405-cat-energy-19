@@ -3,10 +3,11 @@
   line-height: 60px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 
   @include md-size {
     font-size: 60px;
+    margin-bottom: 70px;
   }
 }
 
@@ -19,6 +20,8 @@
   margin: 0;
 
   @include md-size {
+    position: relative;
+    z-index: 20;
     font-size: 16px;
     line-height: 24px;
     color: $dark-grey-color;
@@ -26,16 +29,24 @@
 }
 
 .advantages__item {
-  margin-bottom: 30px;
+  margin-bottom: 21px;
+  padding-bottom: 5px;
+  padding-left: 80px;
+  position: relative;
 
   @include md-size {
     width: 245px;
-    margin-right: 180px;
+    padding: 0;
+    padding-top: 113px;
+    padding-left: 0;
+    margin-bottom: 133px;
+    margin-right: 138px;
   }
 
   @include lg-size {
     width: 235px;
-    margin-right: 80px;
+    margin-right: 90px;
+    padding-top: 112px;
   }
 
   &:last-child {
@@ -46,7 +57,7 @@
     margin-right: 0;
 
     @include lg-size {
-      margin-right: 80px;
+      margin-right: 90px;
     }
   }
 
@@ -55,19 +66,101 @@
       margin-right: 0;
     }
   }
+
+  &:nth-last-child(2) {
+    @include md-size {
+      margin-bottom: 0;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $primary-color;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include md-size {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--healthy::before {
+    background-image: url("../../img/advantage-leaf@1x.png");
+  }
+
+  &--easy::before {
+    background-image: url("../../img/advantage-powder@1x.png");
+  }
+
+  &--replace::before {
+    background-image: url("../../img/advantage-dining@1x.png");
+  }
+
+  &--result::before {
+    background-image: url("../../img/advantage-clock@1x.png");
+  }
+
+  &::after {
+    @include md-size {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      font-size: 281px;
+      line-height: 281px;
+      color: $light-grey-color;
+    }
+
+    @include lg-size {
+      right: -12px;
+    }
+  }
+
+  &--healthy::after {
+    @include md-size {
+      content: "1";
+      right: 16px;
+    }
+
+    @include lg-size {
+      right: 7px;
+    }
+  }
+
+  &--easy::after {
+    @include md-size {
+      content: "2";
+    }
+  }
+
+  &--replace::after {
+    @include md-size {
+      content: "3";
+    }
+  }
+
+  &--result::after {
+    @include md-size {
+      content: "4";
+    }
+  }
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
-  padding-left: 80px;
-  padding-right: 30px;
   list-style: none;
 
   @include md-size {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
+    padding-bottom: 55px;
   }
 }
 
