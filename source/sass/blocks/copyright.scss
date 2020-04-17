@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: space-between;
 
-  &:hover .copyright__logo-image {
+  &:hover .copyright__icon-academy {
     fill: $primary-color;
   }
 
@@ -19,12 +19,8 @@
   }
 }
 
-.copyright__logo-image {
+.copyright__icon-academy {
   width: 27px;
   height: 34px;
   fill: $logo-icon-color;
-}
-
-.copyright__logo-path {
-  fill: $dark-grey-color;
 }
