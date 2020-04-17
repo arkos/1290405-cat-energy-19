@@ -34,9 +34,9 @@
   }
 }
 
-.social__item-link svg,
 .social__icon-vkontakte,
-.social__icon-instagram {
+.social__icon-instagram,
+.social__icon-facebook {
   fill: $logo-icon-color;
 
   &:hover {
@@ -58,7 +58,7 @@
   }
 }
 
-.social__item-link--facebook svg {
+.social__item-link--facebook {
   @include md-size {
     width: 14px;
     height: 28px;
