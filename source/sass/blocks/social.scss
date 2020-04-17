@@ -44,6 +44,27 @@
   }
 }
 
+.social__icon-vkontakte {
+  @include md-size {
+    width: 30px;
+    height: 16px;
+  }
+}
+
+.social__icon-instagram {
+  @include md-size {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__icon-facebook {
+  @include md-size {
+    width: 14px;
+    height: 28px;
+  }
+}
+
 .social__item-link--vkontakte {
   @include md-size {
     width: 30px;
