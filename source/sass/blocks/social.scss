@@ -35,7 +35,8 @@
 }
 
 .social__item-link svg,
-.social__icon-vkontakte {
+.social__icon-vkontakte,
+.social__icon-instagram {
   fill: $logo-icon-color;
 
   &:hover {
@@ -50,7 +51,7 @@
   }
 }
 
-.social__item-link--instagram svg {
+.social__item-link--instagram {
   @include md-size {
     width: 23px;
     height: 23px;
