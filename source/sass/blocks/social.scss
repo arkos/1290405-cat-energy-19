@@ -1,11 +1,11 @@
 .social__list {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
 
   @include md-size {
     margin: 0;
@@ -26,8 +26,8 @@
 
 .social__item-link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   &:active {
     opacity: 0.3;

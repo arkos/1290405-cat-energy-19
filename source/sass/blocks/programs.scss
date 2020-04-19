@@ -1,41 +1,40 @@
 .programs__item-title {
-  font-size: 24px;
-  line-height: 37px;
-  color: $black-color-primary;
-  text-transform: uppercase;
-  font-weight: 400;
   margin: 0;
-  margin-left: 71px;
   margin-bottom: 30px;
+  margin-left: 71px;
+  color: $black-color-primary;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
 
   @include md-size {
-    font-size: 36px;
-    margin-left: 0;
     margin-bottom: 26px;
+    margin-left: 0;
+    font-size: 36px;
   }
 
   @include lg-size {
-    margin-left: 161px;
     margin-bottom: 74px;
+    margin-left: 161px;
   }
 }
 
 .programs__item-description {
   @include font-family($secondary-font, "Tahoma");
-
-  line-height: 18px;
-  color: $dark-grey-color;
   margin: 0;
   margin-bottom: 20px;
   padding-bottom: 22px;
   border-bottom: 1px solid $border-color-4;
+  color: $dark-grey-color;
+
+  line-height: 18px;
 
   @include md-size {
+    padding-bottom: 36px;
+    border-bottom: none;
     font-size: 16px;
     line-height: 24px;
-    border-bottom: none;
-
-    padding-bottom: 36px;
   }
 
   @include lg-size {
@@ -44,17 +43,17 @@
 }
 
 .programs__item-link {
+  display: inline-block;
   position: relative;
+  padding-right: 40px;
+  color: $black-color-primary;
   font-size: 16px;
   text-transform: uppercase;
-  color: $black-color-primary;
-  padding-right: 40px;
-  display: inline-block;
   vertical-align: top;
 
   @include md-size {
-    font-size: 20px;
     padding-right: 50px;
+    font-size: 20px;
   }
 
   &::after {
@@ -96,9 +95,9 @@
 }
 
 .programs__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 
   @include lg-size {
     display: flex;
@@ -108,27 +107,27 @@
 
 .programs__item {
   position: relative;
-  background-color: $light-grey-color;
+  margin-bottom: 20px;
   padding-top: 30px;
+  padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 20px;
+  background-color: $light-grey-color;
 
   @include md-size {
+    margin-bottom: 33px;
     padding-top: 75px;
+    padding-right: 275px;
     padding-bottom: 60px;
     padding-left: 53px;
-    padding-right: 275px;
-    margin-bottom: 33px;
   }
 
   @include lg-size {
+    width: 570px;
     padding-top: 75px;
+    padding-right: 20px;
     padding-bottom: 57px;
     padding-left: 53px;
-    padding-right: 20px;
-    width: 570px;
   }
 
   &--pro {
@@ -153,17 +152,17 @@
 
     @include md-size {
       top: 90px;
-      left: auto;
       right: 60px;
+      left: auto;
       width: 200px;
       height: 200px;
     }
 
     @include lg-size {
-      width: 100px;
-      height: 100px;
       top: 47px;
       left: 50px;
+      width: 100px;
+      height: 100px;
     }
   }
 
@@ -174,8 +173,8 @@
     left: 20px;
     width: 50px;
     height: 50px;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--slim::after {
@@ -186,8 +185,8 @@
 
     @include md-size {
       top: 80px;
-      left: auto;
       right: 90px;
+      left: auto;
       width: 140px;
       height: 195px;
     }
@@ -207,17 +206,17 @@
 
     @include md-size {
       top: 130px;
-      left: auto;
       right: 27px;
+      left: auto;
       width: 270px;
       height: 115px;
     }
 
     @include lg-size {
-      width: 135px;
-      height: 60px;
       top: 65px;
       left: 33px;
+      width: 135px;
+      height: 60px;
     }
   }
 }
@@ -227,14 +226,14 @@
 
   @include md-size {
     width: auto;
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
   }
 
   @include lg-size {
-    margin: 0 auto;
     width: $large-size;
-    padding-left: 40px;
+    margin: 0 auto;
     padding-right: 40px;
+    padding-left: 40px;
   }
 }

@@ -5,10 +5,10 @@
 }
 
 .copyright__logo {
-  color: $dark-grey-color;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: $dark-grey-color;
 
   &:hover .copyright__icon-academy {
     fill: $primary-color;

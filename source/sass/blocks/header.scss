@@ -17,13 +17,13 @@
       @include lg-size {
         content: "";
         position: absolute;
+        z-index: -1;
         top: 0;
         right: 0;
         left: 50%;
-        z-index: -1;
         height: 696px;
-        background-image: url("../../img/index-background-desktop@1x.jpg");
         background-color: $promo-background-color;
+        background-image: url("../../img/index-background-desktop@1x.jpg");
         background-repeat: no-repeat;
         background-position: left center;
         background-size: cover;
@@ -50,10 +50,9 @@
 }
 
 .header__logo-wrapper {
+  position: relative;
   width: 280px;
   margin: 0 auto;
-
-  position: relative;
   padding-top: 14px;
   padding-bottom: 15px;
 
@@ -66,9 +65,9 @@
 
 .header__logo {
   display: inline-block;
-  vertical-align: top;
   width: 190px;
   height: 40px;
+  vertical-align: top;
 
   @include md-size {
     width: 175px;
@@ -103,18 +102,17 @@
 }
 
 .header__nav-toggle {
+  display: block;
   position: absolute;
   top: 26px;
   right: 0;
-
-  display: block;
   width: 25px;
   height: 20px;
+  border: none;
 
   background-color: transparent;
 
   cursor: pointer;
-  border: none;
 
   @include md-size {
     display: none;
