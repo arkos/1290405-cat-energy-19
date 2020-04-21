@@ -67,23 +67,13 @@
   margin: 0 auto;
   display: block;
   background: transparent;
+  background-image: url("../../img/icon-plus-mobile.svg");
 
   @include md-size {
     width: 60px;
     height: 60px;
-  }
-}
 
-.show-more__icon-image {
-  width: 100%;
-  height: auto;
-}
-
-.show-more__icon-polygon {
-  fill: $border-color-6;
-
-  @include md-size {
-    fill: $border-color-1;
+    background-image: url("../../img/icon-plus.svg");
   }
 }
 

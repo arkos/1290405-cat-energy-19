@@ -34,7 +34,9 @@
   }
 }
 
-.social__item-link svg {
+.social__icon-vkontakte,
+.social__icon-instagram,
+.social__icon-facebook {
   fill: $logo-icon-color;
 
   &:hover {
@@ -42,21 +44,42 @@
   }
 }
 
-.social__item-link--vkontakte svg {
+.social__icon-vkontakte {
   @include md-size {
     width: 30px;
     height: 16px;
   }
 }
 
-.social__item-link--instagram svg {
+.social__icon-instagram {
   @include md-size {
     width: 23px;
     height: 23px;
   }
 }
 
-.social__item-link--facebook svg {
+.social__icon-facebook {
+  @include md-size {
+    width: 14px;
+    height: 28px;
+  }
+}
+
+.social__item-link--vkontakte {
+  @include md-size {
+    width: 30px;
+    height: 16px;
+  }
+}
+
+.social__item-link--instagram {
+  @include md-size {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__item-link--facebook {
   @include md-size {
     width: 14px;
     height: 28px;
