@@ -5,9 +5,9 @@
 }
 
 .catalog__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 
   @include md-size {
     display: flex;
@@ -17,17 +17,17 @@
 }
 
 .catalog__item {
-  border-bottom: 1px solid $border-color-2;
   padding-bottom: 23px;
+  border-bottom: 1px solid $border-color-2;
 
   @include md-size {
     width: 324px;
     margin: 0;
-    margin-bottom: 140px;
     margin-right: 60px;
+    margin-bottom: 140px;
+    padding-right: 0;
     padding-bottom: 39px;
     padding-left: 0;
-    padding-right: 0;
     border: none;
     background-color: $light-grey-color;
   }
