@@ -18,6 +18,22 @@ var include = require("posthtml-include");
 
 var server = require("browser-sync").create();
 
+gulp.task("copy", function () {
+  return gulp
+    .src(
+      [
+        "source/fonts/**/*.{woff,woff2}",
+        "source/img/**",
+        "source/js/**",
+        "source/*.ico",
+      ],
+      {
+        base: "source",
+      }
+    )
+    .pipe(gulp.dest("build"));
+});
+
 gulp.task("css", function () {
   return gulp
     .src("source/sass/style.scss")
@@ -74,22 +90,6 @@ gulp.task("server", function () {
     open: true,
     cors: true,
     ui: false,
-  });
-
-  gulp.task("copy", function () {
-    return gulp
-      .src(
-        [
-          "source/fonts/**/*.{woff,woff2}",
-          "source/img/**",
-          "source/js/**",
-          "source/*.ico",
-        ],
-        {
-          base: "source",
-        }
-      )
-      .pipe(gulp.dest("build"));
   });
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
