@@ -76,6 +76,22 @@ gulp.task("server", function () {
     ui: false,
   });
 
+  gulp.task("copy", function () {
+    return gulp
+      .src(
+        [
+          "source/fonts/**/*.{woff,woff2}",
+          "source/img/**",
+          "source/js/**",
+          "source/*.ico",
+        ],
+        {
+          base: "source",
+        }
+      )
+      .pipe(gulp.dest("build"));
+  });
+
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
