@@ -29,19 +29,19 @@
 @mixin container {
   width: $small-size;
   margin: 0 auto;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 
   @include md-size {
     width: $medium-size;
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
   }
 
   @include lg-size {
     width: $large-size;
-    padding-left: 40px;
     padding-right: 40px;
+    padding-left: 40px;
   }
 }
 

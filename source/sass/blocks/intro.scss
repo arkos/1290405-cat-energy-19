@@ -6,8 +6,8 @@
   }
 
   @include lg-size {
-    padding-bottom: 100px;
     margin-bottom: 170px;
+    padding-bottom: 100px;
   }
 }
 
@@ -23,8 +23,8 @@
   padding-top: 30px;
 
   @include md-size {
-    padding-left: 87px;
     width: 515px;
+    padding-left: 87px;
   }
 
   @include lg-size {
@@ -33,22 +33,24 @@
 }
 
 .intro__product-image {
-  position: absolute;
   display: block;
+  position: absolute;
   top: 166px;
   left: calc(50% - 140px);
   margin: 0 auto;
 
   @include md-size {
     position: static;
+    width: 709px;
     margin-top: -79px;
   }
 
   @include lg-size {
     position: absolute;
     top: 30px;
-    left: auto;
     right: 258px;
+    left: auto;
+    width: 552px;
     margin: 0;
   }
 }
@@ -62,16 +64,16 @@
   @include md-size {
     position: relative;
     z-index: 20;
-    font-size: 20px;
-    line-height: 1;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 15px;
-    padding-bottom: 15px;
     width: 245px;
     margin: 0;
     margin-top: 48px;
     margin-left: 87px;
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    font-size: 20px;
+    line-height: 1;
   }
 
   @include lg-size {
