@@ -15,6 +15,7 @@ var svgstore = require("gulp-svgstore");
 
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var htmlmin = require("gulp-htmlmin");
 
 var del = require("del");
 
@@ -86,6 +87,7 @@ gulp.task("html", function () {
   return gulp
     .src("source/*.html")
     .pipe(posthtml([include()]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
