@@ -89,8 +89,10 @@ gulp.task("html", function () {
 gulp.task("js", function () {
   return gulp
     .src("source/js/**/*.js")
+    .pipe(sourcemap.init())
     .pipe(concat("script.min.js"))
     .pipe(uglify())
+    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/js"));
 });
 
