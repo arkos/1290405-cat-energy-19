@@ -18,6 +18,7 @@ var include = require("posthtml-include");
 var htmlmin = require("gulp-htmlmin");
 
 var uglify = require("gulp-uglify");
+var concat = require("gulp-concat");
 
 var del = require("del");
 
@@ -88,6 +89,7 @@ gulp.task("html", function () {
 gulp.task("js", function () {
   return gulp
     .src("source/js/**/*.js")
+    .pipe(concat("script.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest("build/js"));
 });
