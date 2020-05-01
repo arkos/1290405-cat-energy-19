@@ -13,6 +13,9 @@
 /* utils */
 @import "utils.scss";
 
+/* outline */
+@import "outline.scss";
+
 /* header */
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
@@ -28,6 +31,7 @@
 @import "blocks/programs.scss";
 @import "blocks/advantages.scss";
 @import "blocks/container.scss";
+@import "blocks/example.scss";
 
 /* catalog */
 @import "blocks/catalog.scss";
