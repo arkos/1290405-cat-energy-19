@@ -46,3 +46,11 @@
 .slider__toggle--after:checked ~ .slider__image--after {
   display: block;
 }
+
+.slider__toggle--before:checked ~ .slider__controls .slider__bar {
+  margin-left: 0;
+}
+
+.slider__toggle--after:checked ~ .slider__controls .slider__bar {
+  margin-left: 50%;
+}
