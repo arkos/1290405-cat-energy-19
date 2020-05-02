@@ -132,7 +132,11 @@
             <b class="example__total-count">15 000 руб.</b>
           </div>
           <div class="slider">
-            <div class="slider__image">
+            <input type="radio" id="toggle-before" name="toggle-slide"
+              class="visually-hidden slider__toggle slider__toggle--before" checked>
+            <input type="radio" id="toggle-after" name="toggle-slide"
+              class="visually-hidden slider__toggle slider__toggle--after">
+            <div class="slider__image slider__image--before">
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)"
                   srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
@@ -146,12 +150,26 @@
                   width="320" height="240" alt="Изображение кота до похудения" />
               </picture>
             </div>
+            <div class="slider__image slider__image--after">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x"
+                  media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x"
+                  media="(min-width: 320px)">
+                <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="img/after-tablet@1x.jpg 1x, img/after-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <img class="slider__image-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
+                  width="320" height="240" alt="Изображение кота до похудения" />
+              </picture>
+            </div>
             <div class="slider__controls">
-              <label for="" class="slider__text">Было</label>
+              <label for="toggle-before" class="slider__text">Было</label>
               <div class="slider__scale">
                 <div class="slider__bar"></div>
               </div>
-              <label for="" class="slider__text">Стало</label>
+              <label for="toggle-after" class="slider__text">Стало</label>
             </div>
           </div>
         </div>
