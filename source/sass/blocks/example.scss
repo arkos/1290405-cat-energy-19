@@ -6,6 +6,7 @@
 
 .example__wrapper {
   @include container();
+  padding-bottom: 20px;
 }
 
 .example__title {
