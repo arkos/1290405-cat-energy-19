@@ -1,0 +1,35 @@
+.contact-us__wrapper {
+  @include container();
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact-us__welcome {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 50%;
+  margin: 0;
+}
+
+.contact-us__address {
+  @include font-family($secondary-font, "Tahoma");
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark-grey-color;
+  font-style: normal;
+  width: 50%;
+}
+
+.contact-us__map-wrapper {
+  width: 100%;
+}
+
+.contact-us__map {
+  width: 100%;
+  height: 370px;
+}
