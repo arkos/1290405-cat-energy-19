@@ -8,12 +8,12 @@
 }
 
 .extra__title {
-  font-size: 24px;
-  font-weight: 400;
   margin: 0;
   margin-bottom: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .extra__list {
@@ -33,42 +33,42 @@
 }
 
 .extra__name {
-  font-size: 16px;
+  margin: 0;
   color: $black-color-secondary;
+  font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .extra__content {
   display: flex;
+  margin-bottom: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 5px;
 }
 
 .extra__description {
   @include font-family($secondary-font, "Tahoma");
-  font-size: 14px;
-  color: $dark-grey-color;
-  margin: 0;
   width: 50%;
+  margin: 0;
+  color: $dark-grey-color;
+  font-size: 14px;
 }
 
 .extra__price {
   @include font-family($secondary-font, "Tahoma");
-  font-size: 14px;
-  color: $dark-grey-color;
-  font-weight: normal;
   width: 50%;
+  color: $dark-grey-color;
+  font-size: 14px;
+  font-weight: normal;
   text-align: right;
 }
 
 .extra__action {
   padding-top: 11px;
+  padding-right: 111px;
   padding-bottom: 10px;
   padding-left: 110px;
-  padding-right: 111px;
   font-size: 16px;
   line-height: 20px;
 }
