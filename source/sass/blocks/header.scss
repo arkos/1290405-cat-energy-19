@@ -56,8 +56,8 @@
   position: relative;
   width: 280px;
   margin: 0 auto;
-  padding-top: 14px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 16px;
 
   @include md-size {
     width: 175px;
@@ -107,7 +107,7 @@
 .header__nav-toggle {
   display: block;
   position: absolute;
-  top: 26px;
+  top: 25px;
   right: 0;
   width: 25px;
   height: 20px;
