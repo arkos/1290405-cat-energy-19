@@ -45,77 +45,82 @@
   <main class="main">
     <h1 class="main__title">Подбор программы</h1>
     <section class="profile-form">
+      <h2 class="visually-hidden">Анкета подбора программы</h2>
       <p class="profile-form__notes">Заполните анкету и мы подберем<br>
         программу питания для вашего кота</p>
-      <form class="profile-form__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form-control__group">
-          <legend class="form-control__group-label">Данные кота</legend>
-          <p class="profile-form__control form-control">
-            <label class="form-control__label" for="name-id">Имя*</label>
-            <input class="form-control__input" type="text" id="name-id" name="name" placeholder="Барсик">
+      <form class="profile-form__form input-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="input-form__set">
+          <h3 class="visually-hidden">Данные кота</h3>
+          <p class="profile-form__control input-form__group">
+            <label class="input-form__label" for="name-id">Имя*</label>
+            <input class="input-form__input" type="text" id="name-id" name="name" placeholder="Барсик">
           </p>
-          <p class="profile-form__control form-control">
-            <label class="form-control__label" for="weight-id">Вес (кг):*</label>
-            <input class="form-control__input" type="text" id="weight-id" name="weight" placeholder="7">
+          <p class="profile-form__control input-form__group">
+            <label class="input-form__label" for="weight-id">Вес (кг):*</label>
+            <input class="input-form__input" type="text" id="weight-id" name="weight" placeholder="7">
           </p>
-          <p class="profile-form__control form-control">
-            <label class="form-control__label" for="age-id">Возраст (лет):</label>
-            <input class="form-control__input" type="text" id="age-id" name="age" placeholder="7">
-          </p>
-        </fieldset>
-        <fieldset class="form-control__group">
-          <legend class="form-control__group-label">Выберите программу</legend>
-          <p class="profile-form__control form-control">
-            <label class="form-control__label" for="slim-id">Похудение</label>
-            <input class="form-control__input" type="radio" id="slim-id" value="slim" name="program">
-          </p>
-          <p class="profile-form__control form-control">
-            <label class="form-control__label" for="pro-id">Набор массы</label>
-            <input class="form-control__input" type="radio" id="pro-id" value="pro" name="program">
-          </p>
-          <p class="profile-form__control form-control">
-            <label class="form-control__label" for="advise-id">Не знаю (Нужен ваш совет)</label>
-            <input class="form-control__input" type="radio" id="advise-id" value="advise" name="program">
+          <p class="profile-form__control input-form__group">
+            <label class="input-form__label" for="age-id">Возраст (лет):</label>
+            <input class="input-form__input" type="text" id="age-id" name="age" placeholder="7">
           </p>
         </fieldset>
-        <fieldset class="form-control__group">
-          <legend class="form-control__group-label">Контактные данные
-            (владельца кота)</legend>
-          <p class="profile-form__control form-control">
-            <label class="form-control__label" for="email-id">E-mail:*</label>
-            <input class="form-control__input" type="email" id="email-id" name="email"
-              placeholder="kuklachev@gmail.com">
+        <fieldset class="input-form__set">
+          <h3 class="visually-hidden">Выберите программу</h3>
+          <ul class="input-form__list">
+
+          </ul>
+          <p class="profile-form__control input-form__group">
+            <input class="visually-hidden" type="radio" id="slim-id" value="slim" name="program">
+            <label class="input-form__label" for="slim-id">Похудение</label>
           </p>
-          <p class="profile-form__control form-control">
-            <label class="form-control__label" for="phone-id">Телефон:*</label>
-            <input class="form-control__input" type="tel" id="phone-id" name="phone" placeholder="8 (960) 900-60-90">
+          <p class="profile-form__control input-form__group">
+            <input class="visually-hidden" type="radio" id="pro-id" value="pro" name="program">
+            <label class="input-form__label" for="pro-id">Набор массы</label>
+          </p>
+          <p class="profile-form__control input-form__group">
+            <input class="visually-hidden" type="radio" id="advise-id" value="advise" name="program">
+            <label class="input-form__label" for="advise-id">Не знаю (Нужен ваш совет)</label>
           </p>
         </fieldset>
-        <fieldset class="form-control__group">
-          <legend class="form-control__group-label">Комментарий</legend>
-          <p class="profile-form__control form-control">
+        <fieldset class="input-form__set">
+          <h3 class="subject-title"><span>
+              Контактные данные<br>
+              (владельца кота)
+            </span></h3>
+          <p class="profile-form__control input-form__group">
+            <label class="input-form__label" for="email-id">E-mail:*</label>
+            <input class="input-form__input" type="email" id="email-id" name="email" placeholder="kuklachev@gmail.com">
+          </p>
+          <p class="profile-form__control input-form">
+            <label class="input-form__label" for="phone-id">Телефон:*</label>
+            <input class="input-form__input" type="tel" id="phone-id" name="phone" placeholder="8 (960) 900-60-90">
+          </p>
+        </fieldset>
+        <fieldset class="input-form__set">
+          <h3 class="subject-title"><span>Комментарий</span></h3>
+          <p class="profile-form__control input-form__group">
             <label for="description-id" class="visually-hidden"></label>
-            <textarea class="form-control__input" name="description" id="description-id" cols="30" rows="10"
+            <textarea class="input-form__input" name="description" id="description-id" cols="30" rows="10"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </p>
         </fieldset>
-        <fieldset class="form-control__group">
-          <legend class="form-control__group-label">Дополнительно</legend>
-          <p class="profile-form__control form-control">
-            <label class="form-control__label" for="sugar-id">Сахарозаменитель</label>
-            <input class="form-control__input" type="checkbox" id="sugar-id" value="sugar" name="extra-sugar" checked>
+        <fieldset class="input-form__set">
+          <h3 class="subject-title"><span>Дополнительно</span></h3>
+          <p class="profile-form__control input-form__group">
+            <label class="input-form__label" for="sugar-id">Сахарозаменитель</label>
+            <input class="visually-hidden" type="checkbox" id="sugar-id" value="sugar" name="extra-sugar" checked>
           </p>
-          <p class="profile-form__control form-control">
-            <label class="form-control__label" for="water-id">Питьевая вода</label>
-            <input class="form-control__input" type="checkbox" id="water-id" value="water" name="extra-water">
+          <p class="profile-form__control input-form__group">
+            <label class="input-form__label" for="water-id">Питьевая вода</label>
+            <input class="visually-hidden" type="checkbox" id="water-id" value="water" name="extra-water">
           </p>
-          <p class="profile-form__control form-control">
-            <label class="form-control__label" for="milk-id">Молоко</label>
-            <input class="form-control__input" type="checkbox" id="milk-id" value="milk" name="extra-milk">
+          <p class="profile-form__control input-form__group">
+            <label class="input-form__label" for="milk-id">Молоко</label>
+            <input class="visually-hidden" type="checkbox" id="milk-id" value="milk" name="extra-milk">
           </p>
-          <p class="profile-form__control form-control">
-            <label class="form-control__label" for="vitamins-id">Витамины</label>
-            <input class="form-control__input" type="checkbox" id="vitamins-id" value="vitamins" name="extra-vitamins">
+          <p class="profile-form__control input-form__group">
+            <label class="input-form__label" for="vitamins-id">Витамины</label>
+            <input class="visually-hidden" type="checkbox" id="vitamins-id" value="vitamins" name="extra-vitamins">
           </p>
         </fieldset>
         <button class="profile-form__button button" type="submit">Отправить заявку</button>

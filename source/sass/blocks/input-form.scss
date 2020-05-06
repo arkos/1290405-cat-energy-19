@@ -1,0 +1,23 @@
+.input-form__set {
+  border: none;
+}
+
+.input-form__group {
+  color: $black-color-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.input-form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.input-form__input::placeholder {
+  color: $dark-grey-color;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
