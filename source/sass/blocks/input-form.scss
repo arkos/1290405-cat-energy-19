@@ -1,6 +1,7 @@
 .input-form__set {
   padding: 0;
   padding-top: 10px;
+  padding-bottom: 10px;
   border: none;
 }
 
@@ -9,7 +10,7 @@
   align-items: center;
   justify-content: flex-start;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .input-form__list {
@@ -24,6 +25,7 @@
 
 .input-form__label {
   margin-right: 15px;
+  margin-left: -3px;
   color: $black-color-secondary;
   font-size: 16px;
   line-height: 18px;
@@ -41,10 +43,11 @@
 
 .input-form__input {
   flex-grow: 1;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
+  border: 1px solid $border-color-3;
 }
 
 .input-form__select + .input-form__label--select::before {
