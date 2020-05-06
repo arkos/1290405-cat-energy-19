@@ -1,4 +1,10 @@
 .profile-form__notes {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.profile-form__subtitle {
   @include font-family($secondary-font, "Tahoma");
   color: $dark-grey-color;
   font-size: 14px;

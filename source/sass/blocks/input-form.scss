@@ -1,18 +1,84 @@
 .input-form__set {
+  padding: 0;
   border: none;
 }
 
 .input-form__group {
-  color: $black-color-secondary;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .input-form__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.input-form__item {
+  margin-bottom: 20px;
+}
+
+.input-form__label {
+  margin-right: 15px;
+  color: $black-color-secondary;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &--select {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-left: 45px;
+    cursor: pointer;
+    user-select: none;
+  }
+}
+
+.input-form__input {
+  flex-grow: 1;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.input-form__select + .input-form__label--select::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $border-color-3;
+}
+
+.input-form__select--radio + .input-form__label--select::before {
+  border-radius: 50%;
+}
+
+.input-form__select--radio:checked + .input-form__label--select::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $primary-color;
+}
+
+.input-form__select--checkbox:checked + .input-form__label--select::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  width: 22px;
+  height: 17px;
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .input-form__input::placeholder {
