@@ -1,10 +1,12 @@
 .header {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid $border-color-1;
 
   @include md-size {
     flex-direction: row;
     margin-top: 25px;
+    border-bottom: none;
   }
 
   @include lg-size {
@@ -13,6 +15,7 @@
   }
 
   &--main-page {
+    border-bottom: none;
     &::before {
       @include lg-size {
         content: "";
