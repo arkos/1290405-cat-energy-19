@@ -45,11 +45,15 @@
   <main class="main">
     <div class="container">
       <h1 class="main__title">Подбор программы</h1>
-      <section class="profile-form">
+    </div>
+    <section class="profile-form">
+      <div class="container">
         <h2 class="visually-hidden">Анкета подбора программы</h2>
         <p class="profile-form__notes">Заполните анкету и мы подберем<br>
           программу питания для вашего кота</p>
-        <form class="profile-form__form input-form" action="https://echo.htmlacademy.ru" method="post">
+      </div>
+      <form class="profile-form__form input-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="container">
           <fieldset class="input-form__set">
             <h3 class="visually-hidden">Данные кота</h3>
             <p class="profile-form__control input-form__group">
@@ -65,78 +69,79 @@
               <input class="input-form__input" type="text" id="age-id" name="age" placeholder="7">
             </p>
           </fieldset>
-          <!-- <fieldset class="input-form__set">
-            <h3 class="visually-hidden">Выберите программу</h3>
-            <ul class="input-form__list">
-              <li class="input-form__item">
-                <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="slim-id"
-                  value="slim" name="program" checked>
-                <label class="input-form__label input-form__label--select" for="slim-id">Похудение</label>
-              </li>
-              <li class="input-form__item">
-                <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="pro-id"
-                  value="pro" name="program">
-                <label class="input-form__label input-form__label--select" for="pro-id">Набор массы</label>
-              </li>
-              <li class="input-form__item">
-                <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="advise-id"
-                  value="advise" name="program">
-                <label class="input-form__label input-form__label--select" for="advise-id">Не знаю (Нужен ваш
-                  совет)</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="input-form__set">
-            <h3 class="subject-title"><span>
-                Контактные данные<br>
-                (владельца кота)
-              </span></h3>
-            <p class="profile-form__control input-form__group">
-              <label class="input-form__label" for="email-id">E-mail:*</label>
-              <input class="input-form__input" type="email" id="email-id" name="email"
-                placeholder="kuklachev@gmail.com">
-            </p>
-            <p class="profile-form__control input-form">
-              <label class="input-form__label" for="phone-id">Телефон:*</label>
-              <input class="input-form__input" type="tel" id="phone-id" name="phone" placeholder="8 (960) 900-60-90">
-            </p>
-          </fieldset>
-          <fieldset class="input-form__set">
-            <h3 class="subject-title"><span>Комментарий</span></h3>
-            <p class="profile-form__control input-form__group">
-              <label for="description-id" class="visually-hidden"></label>
-              <textarea class="input-form__input" name="description" id="description-id" cols="30" rows="10"
-                placeholder="Расскажите обо всех повадках кота"></textarea>
-            </p>
-          </fieldset>
-          <fieldset class="input-form__set">
-            <h3 class="subject-title"><span>Дополнительно</span></h3>
-            <p class="profile-form__control input-form__group">
-              <input class="visually-hidden input-form__select input-form__select--checkbox" type="checkbox"
-                id="sugar-id" value="sugar" name="extra-sugar" checked>
-              <label class="input-form__label input-form__label--select" for="sugar-id">Сахарозаменитель</label>
-            </p>
-            <p class="profile-form__control input-form__group">
-              <input class="visually-hidden input-form__select input-form__select--checkbox" type="checkbox"
-                id="water-id" value="water" name="extra-water">
-              <label class="input-form__label input-form__label--select" for="water-id">Питьевая вода</label>
-            </p>
-            <p class="profile-form__control input-form__group">
-              <input class="visually-hidden input-form__select input-form__select--checkbox" type="checkbox"
-                id="milk-id" value="milk" name="extra-milk">
-              <label class="input-form__label input-form__label--select" for="milk-id">Молоко</label>
-            </p>
-            <p class="profile-form__control input-form__group">
-              <input class="visually-hidden input-form__select input-form__select--checkbox" type="checkbox"
-                id="vitamins-id" value="vitamins" name="extra-vitamins">
-              <label class="input-form__label input-form__label--select" for="vitamins-id">Витамины</label>
-            </p>
-          </fieldset>
-          <button class="profile-form__button button" type="submit">Отправить заявку</button>
-          <p class="profile-form__subtitle"><sup>*</sup> — Обязательные поля</p> -->
-        </form>
-      </section>
-    </div>
+        </div>
+        <!-- <fieldset class="input-form__set">
+          <h3 class="visually-hidden">Выберите программу</h3>
+          <ul class="input-form__list">
+            <li class="input-form__item">
+              <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="slim-id"
+                value="slim" name="program" checked>
+              <label class="input-form__label input-form__label--select" for="slim-id">Похудение</label>
+            </li>
+            <li class="input-form__item">
+              <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="pro-id"
+                value="pro" name="program">
+              <label class="input-form__label input-form__label--select" for="pro-id">Набор массы</label>
+            </li>
+            <li class="input-form__item">
+              <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="advise-id"
+                value="advise" name="program">
+              <label class="input-form__label input-form__label--select" for="advise-id">Не знаю (Нужен ваш
+                совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="input-form__set">
+          <h3 class="subject-title"><span>
+              Контактные данные<br>
+              (владельца кота)
+            </span></h3>
+          <p class="profile-form__control input-form__group">
+            <label class="input-form__label" for="email-id">E-mail:*</label>
+            <input class="input-form__input" type="email" id="email-id" name="email"
+              placeholder="kuklachev@gmail.com">
+          </p>
+          <p class="profile-form__control input-form">
+            <label class="input-form__label" for="phone-id">Телефон:*</label>
+            <input class="input-form__input" type="tel" id="phone-id" name="phone" placeholder="8 (960) 900-60-90">
+          </p>
+        </fieldset>
+        <fieldset class="input-form__set">
+          <h3 class="subject-title"><span>Комментарий</span></h3>
+          <p class="profile-form__control input-form__group">
+            <label for="description-id" class="visually-hidden"></label>
+            <textarea class="input-form__input" name="description" id="description-id" cols="30" rows="10"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </p>
+        </fieldset>
+        <fieldset class="input-form__set">
+          <h3 class="subject-title"><span>Дополнительно</span></h3>
+          <p class="profile-form__control input-form__group">
+            <input class="visually-hidden input-form__select input-form__select--checkbox" type="checkbox"
+              id="sugar-id" value="sugar" name="extra-sugar" checked>
+            <label class="input-form__label input-form__label--select" for="sugar-id">Сахарозаменитель</label>
+          </p>
+          <p class="profile-form__control input-form__group">
+            <input class="visually-hidden input-form__select input-form__select--checkbox" type="checkbox"
+              id="water-id" value="water" name="extra-water">
+            <label class="input-form__label input-form__label--select" for="water-id">Питьевая вода</label>
+          </p>
+          <p class="profile-form__control input-form__group">
+            <input class="visually-hidden input-form__select input-form__select--checkbox" type="checkbox"
+              id="milk-id" value="milk" name="extra-milk">
+            <label class="input-form__label input-form__label--select" for="milk-id">Молоко</label>
+          </p>
+          <p class="profile-form__control input-form__group">
+            <input class="visually-hidden input-form__select input-form__select--checkbox" type="checkbox"
+              id="vitamins-id" value="vitamins" name="extra-vitamins">
+            <label class="input-form__label input-form__label--select" for="vitamins-id">Витамины</label>
+          </p>
+        </fieldset>
+        <button class="profile-form__button button" type="submit">Отправить заявку</button>
+        <p class="profile-form__subtitle"><sup>*</sup> — Обязательные поля</p> -->
+      </form>
+    </section>
+
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
