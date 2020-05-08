@@ -1,16 +1,16 @@
 .subject-title {
-  margin: 0;
-  margin-bottom: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  overflow: hidden;
   font-size: 24px;
   font-weight: 400;
+
+  &--extra {
+    margin-bottom: 10px;
+  }
 }
 
 .subject-title span {
+  display: table;
   position: relative;
-  padding-right: 15px;
+  padding-right: 21px;
 
   &::after {
     content: "";
@@ -22,5 +22,11 @@
     height: 3px;
     transform: translate(0, -50%);
     background: $primary-color;
+  }
+}
+
+.subject-title--wrap span {
+  &::after {
+    top: 31%;
   }
 }
