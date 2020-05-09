@@ -16,7 +16,6 @@
 .input-form__group {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   margin: 0;
   margin-top: 15px;
 }
@@ -42,8 +41,7 @@
 }
 
 .input-form__label {
-  margin-right: 15px;
-  margin-left: -3px;
+  margin-right: 14px;
   color: $black-color-secondary;
   font-size: 16px;
   line-height: 18px;
@@ -61,11 +59,14 @@
 
 .input-form__input {
   flex-grow: 1;
-  padding-top: 12px;
+  padding-top: 9px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   padding-left: 15px;
   border: 1px solid $border-color-3;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 
   &--icon {
     padding-left: 10px;
