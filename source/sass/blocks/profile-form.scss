@@ -9,13 +9,15 @@
 }
 
 .profile-form__details {
+  margin: 0;
   padding: 0;
   padding-top: 25px;
   padding-bottom: 23px;
   border: none;
 }
 
-.profile-form__details-list {
+.profile-form__details-list,
+.profile-form__option-list {
   @include container();
 }
 
@@ -28,14 +30,13 @@
 }
 
 .profile-form__options {
+  margin: 0;
+  padding: 0;
   padding-top: 25px;
   padding-bottom: 25px;
   border-right: none;
   border-left: none;
   border-color: $border-color-2;
-}
-
-.profile-form__option-list {
 }
 
 .profile-form__option-item {

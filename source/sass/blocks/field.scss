@@ -27,7 +27,7 @@
     display: block;
     position: relative;
     width: 100%;
-    padding-left: 54px;
+    padding-left: 45px;
     cursor: pointer;
     user-select: none;
   }
@@ -55,7 +55,7 @@
   content: "";
   position: absolute;
   top: -6px;
-  left: 8px;
+  left: 0;
   width: 30px;
   height: 30px;
   border: 1px solid $border-color-3;
@@ -69,7 +69,7 @@
   content: "";
   position: absolute;
   top: 3px;
-  left: 17px;
+  left: 9px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
