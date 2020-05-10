@@ -9,13 +9,8 @@
 }
 
 .profile-form__details {
-  // padding: 0;
-  // padding-top: 23px;
-  // padding-bottom: 23px;
-  // border: none;
-
   padding: 0;
-  padding-top: 23px;
+  padding-top: 25px;
   padding-bottom: 23px;
   border: none;
 }
@@ -26,7 +21,19 @@
 
 .profile-form__details-item {
   margin-bottom: 13px;
-  margin-left: -3px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.profile-form__options {
+}
+
+.profile-form__option-list {
+}
+
+.profile-form__options-item {
 }
 
 // .profile-form__subtitle {

@@ -58,7 +58,7 @@
             <h3 class="visually-hidden">Данные кота</h3>
             <div class="profile-form__details-list">
               <p class="profile-form__details-item field">
-                <label class="field__label" for="name-field">Имя:*</label>
+                <label class="field__label field__label--name" for="name-field">Имя:*</label>
                 <input class="field__input" type="text" id="name-field" name="name" placeholder="Барсик">
               </p>
               <p class="profile-form__details-item field">
@@ -72,28 +72,27 @@
             </div>
           </fieldset>
 
-          <fieldset class="input-form__options">
-            <!-- <div class="container">
-              <h3 class="visually-hidden">Выберите программу</h3>
-              <ul class="input-form__list">
-                <li class="input-form__item">
-                  <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="slim-id"
-                    value="slim" name="program" checked>
-                  <label class="input-form__label input-form__label--select" for="slim-id">Похудение</label>
-                </li>
-                <li class="input-form__item">
-                  <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="pro-id"
-                    value="pro" name="program">
-                  <label class="input-form__label input-form__label--select" for="pro-id">Набор массы</label>
-                </li>
-                <li class="input-form__item">
-                  <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="advise-id"
-                    value="advise" name="program">
-                  <label class="input-form__label input-form__label--select" for="advise-id">Не знаю (Нужен ваш
-                    совет)</label>
-                </li>
-              </ul>
-            </div> -->
+          <fieldset class="profile-form__options">
+            <h3 class="visually-hidden">Выберите программу</h3>
+            <div class="profile-form__option-list">
+              <p class="profile-form__option-item">
+                <input class="visually-hidden profile-form__select profile-form__select--radio" type="radio"
+                  id="slim-id" value="slim" name="program" checked>
+                <label class="profile-form__label profile-form__label--select" for="slim-id">Похудение</label>
+              </p>
+              <p class="profile-form__option-item">
+                <input class="visually-hidden profile-form__select profile-form__select--radio" type="radio" id="pro-id"
+                  value="pro" name="program">
+                <label class="profile-form__label profile-form__label--select" for="pro-id">Набор массы</label>
+              </p>
+              <p class="profile-form__option-item">
+                <input class="visually-hidden profile-form__select profile-form__select--radio" type="radio"
+                  id="advise-id" value="advise" name="program">
+                <label class="profile-form__label profile-form__label--select" for="advise-id">Не знаю (Нужен ваш
+                  совет)</label>
+              </p>
+            </div>
+
           </fieldset>
         </div>
         <!-- <fieldset class="profile-form__contact-details input-form__set">

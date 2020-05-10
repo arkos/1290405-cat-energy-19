@@ -15,6 +15,10 @@
   flex-shrink: 0;
   margin-right: 15px;
   color: $black-color-secondary;
+
+  &--name {
+    margin-right: 11px;
+  }
 }
 
 .field__input {
