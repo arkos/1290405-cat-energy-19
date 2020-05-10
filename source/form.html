@@ -52,49 +52,51 @@
         <p class="profile-form__notes">Заполните анкету и мы подберем<br>
           программу питания для вашего кота</p>
       </div>
-      <form class="profile-form__form input-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="input-form__set">
-          <div class="container">
+      <form class="profile-form__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="profile-form__wrapper">
+          <fieldset class="profile-form__details">
             <h3 class="visually-hidden">Данные кота</h3>
-            <p class="profile-form__control input-form__group">
-              <label class="input-form__label" for="name-id">Имя:*</label>
-              <input class="input-form__input" type="text" id="name-id" name="name" placeholder="Барсик">
-            </p>
-            <p class="profile-form__control input-form__group">
-              <label class="input-form__label" for="weight-id">Вес (кг):*</label>
-              <input class="input-form__input" type="text" id="weight-id" name="weight" placeholder="7">
-            </p>
-            <p class="profile-form__control input-form__group">
-              <label class="input-form__label" for="age-id">Возраст (лет):</label>
-              <input class="input-form__input" type="text" id="age-id" name="age" placeholder="7">
-            </p>
-          </div>
-        </fieldset>
+            <div class="profile-form__details-list">
+              <p class="profile-form__details-item field">
+                <label class="field__label" for="name-field">Имя:*</label>
+                <input class="field__input" type="text" id="name-field" name="name" placeholder="Барсик">
+              </p>
+              <p class="profile-form__details-item field">
+                <label class="field__label" for="weight-field">Вес (кг):*</label>
+                <input class="field__input" type="text" id="weight-field" name="weight" placeholder="7">
+              </p>
+              <p class="profile-form__details-item field">
+                <label class="field__label" for="age-field">Возраст (лет):</label>
+                <input class="field__input" type="text" id="age-field" name="age" placeholder="7">
+              </p>
+            </div>
+          </fieldset>
 
-        <fieldset class="input-form__set input-form__set--has-border">
-          <div class="container">
-            <h3 class="visually-hidden">Выберите программу</h3>
-            <ul class="input-form__list">
-              <li class="input-form__item">
-                <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="slim-id"
-                  value="slim" name="program" checked>
-                <label class="input-form__label input-form__label--select" for="slim-id">Похудение</label>
-              </li>
-              <li class="input-form__item">
-                <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="pro-id"
-                  value="pro" name="program">
-                <label class="input-form__label input-form__label--select" for="pro-id">Набор массы</label>
-              </li>
-              <li class="input-form__item">
-                <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="advise-id"
-                  value="advise" name="program">
-                <label class="input-form__label input-form__label--select" for="advise-id">Не знаю (Нужен ваш
-                  совет)</label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="profile-form__contact-details input-form__set">
+          <fieldset class="input-form__options">
+            <!-- <div class="container">
+              <h3 class="visually-hidden">Выберите программу</h3>
+              <ul class="input-form__list">
+                <li class="input-form__item">
+                  <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="slim-id"
+                    value="slim" name="program" checked>
+                  <label class="input-form__label input-form__label--select" for="slim-id">Похудение</label>
+                </li>
+                <li class="input-form__item">
+                  <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="pro-id"
+                    value="pro" name="program">
+                  <label class="input-form__label input-form__label--select" for="pro-id">Набор массы</label>
+                </li>
+                <li class="input-form__item">
+                  <input class="visually-hidden input-form__select input-form__select--radio" type="radio" id="advise-id"
+                    value="advise" name="program">
+                  <label class="input-form__label input-form__label--select" for="advise-id">Не знаю (Нужен ваш
+                    совет)</label>
+                </li>
+              </ul>
+            </div> -->
+          </fieldset>
+        </div>
+        <!-- <fieldset class="profile-form__contact-details input-form__set">
           <div class="container">
             <h3 class="profile-form__subject subject-title subject-title--wrap"><span>
                 Контактные данные<br>
@@ -150,10 +152,10 @@
             <button class="profile-form__button button" type="submit">Отправить заявку</button>
             <p class="profile-form__subtitle"><sup>*</sup> — Обязательные поля</p>
           </div>
-        </fieldset>
+        </fieldset> -->
       </form>
     </section>
-    <section class="contact-us">
+    <!-- <section class="contact-us">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <div class="contact-us__wrapper contact-us__wrapper--dark">
         <p class="contact-us__welcome">приглашаем<br> к сотрудничеству дилеров!</p>
@@ -177,10 +179,10 @@
             width="320" height="360" alt="Магазин по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" />
         </picture>
       </div>
-    </section>
+    </section> -->
 
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__logo logo">
         <a class="logo__link" href="index.html">
@@ -220,7 +222,7 @@
         </a>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <script src="js/script.min.js"></script>
 </body>
 

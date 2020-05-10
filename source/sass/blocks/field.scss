@@ -1,0 +1,36 @@
+.field {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.field__label,
+.field__input {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.field__label {
+  flex-shrink: 0;
+  margin-right: 15px;
+  color: $black-color-secondary;
+}
+
+.field__input {
+  flex-grow: 1;
+  min-width: 0;
+  padding: 10px;
+  padding-left: 15px;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+  color: $dark-grey-color;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
