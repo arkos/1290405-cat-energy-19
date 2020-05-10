@@ -28,12 +28,22 @@
 }
 
 .profile-form__options {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-right: none;
+  border-left: none;
+  border-color: $border-color-2;
 }
 
 .profile-form__option-list {
 }
 
-.profile-form__options-item {
+.profile-form__option-item {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 // .profile-form__subtitle {

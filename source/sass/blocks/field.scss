@@ -13,11 +13,23 @@
 
 .field__label {
   flex-shrink: 0;
-  margin-right: 15px;
   color: $black-color-secondary;
+
+  &--input {
+    margin-right: 15px;
+  }
 
   &--name {
     margin-right: 11px;
+  }
+
+  &--select {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-left: 54px;
+    cursor: pointer;
+    user-select: none;
   }
 }
 
@@ -37,4 +49,41 @@
     line-height: 18px;
     text-transform: uppercase;
   }
+}
+
+.field__select + .field__label--select::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $border-color-3;
+}
+
+.field__select--radio + .field__label--select::before {
+  border-radius: 50%;
+}
+
+.field__select--radio:checked + .field__label--select::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 17px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $primary-color;
+}
+
+.field__select--checkbox:checked + .field__label--select::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  width: 22px;
+  height: 17px;
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
