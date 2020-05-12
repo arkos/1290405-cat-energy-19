@@ -75,43 +75,51 @@
             <h3 class="visually-hidden">Выберите программу</h3>
             <div class="profile-form__option-list">
               <p class="profile-form__option-item field">
-                <input class="visually-hidden field__select field__select--radio" type="radio" id="slim-id" value="slim"
-                  name="program" checked>
-                <label class="field__label field__label--select" for="slim-id">Похудение</label>
+                <input class="visually-hidden field__select field__select--radio" type="radio" id="slim-field"
+                  value="slim" name="program" checked>
+                <label class="field__label field__label--select" for="slim-field">Похудение</label>
               </p>
               <p class="profile-form__option-item field">
-                <input class="visually-hidden field__select field__select--radio" type="radio" id="pro-id" value="pro"
-                  name="program">
-                <label class="field__label field__label--select" for="pro-id">Набор массы</label>
+                <input class="visually-hidden field__select field__select--radio" type="radio" id="pro-field"
+                  value="pro" name="program">
+                <label class="field__label field__label--select" for="pro-field">Набор массы</label>
               </p>
               <p class="profile-form__option-item field">
-                <input class="visually-hidden field__select field__select--radio" type="radio" id="advise-id"
+                <input class="visually-hidden field__select field__select--radio" type="radio" id="advise-field"
                   value="advise" name="program">
-                <label class="field__label field__label--select" for="advise-id">Не знаю (Нужен ваш
+                <label class="field__label field__label--select" for="advise-field">Не знаю (Нужен ваш
                   совет)</label>
               </p>
             </div>
           </fieldset>
         </div>
-        <!-- <fieldset class="profile-form__contact-details input-form__set">
-          <div class="container">
-            <h3 class="profile-form__subject subject-title subject-title--wrap"><span>
-                Контактные данные<br>
-                (владельца кота)
-              </span></h3>
-            <p class="profile-form__control input-form__group">
-              <label class="input-form__label" for="email-id">E-mail:*</label>
-              <input class="input-form__input input-form__input--icon" type="email" id="email-id" name="email"
-                placeholder="kuklachev@gmail.com">
+        <fieldset class="profile-form__contact-details">
+          <h3 class="profile-form__subject">Контактные данные<br>
+            (владельца кота)</h3>
+          <div class="profile-form__contact-list">
+            <p class="profile-form__contact-item field field--with-icon">
+              <label class="field__label field__label--input field__label--email" for="email-field">E-mail:*</label>
+              <input class="field__input field__input--icon field__input--email" type="email" id="email-field"
+                name="email" placeholder="kuklachev@gmail.com">
+              <span class="field__icon-holder">
+                <svg class="profile-form__icon-email" width="17" height="13">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+              </span>
             </p>
-            <p class="profile-form__control input-form__group">
-              <label class="input-form__label" for="phone-id">Телефон:*</label>
-              <input class="input-form__input input-form__input--icon" type="tel" id="phone-id" name="phone"
-                placeholder="8 (960) 900-60-90">
+            <p class="profile-form__contact-item field field--with-icon">
+              <label class="field__label field__label--input field__label--phone" for="phone-field">Телефон:*</label>
+              <input class="field__input field__input--icon field__input--phone" type="tel" id="phone-field"
+                name="phone" placeholder="8 (960) 900-60-90">
+              <span class="field__icon-holder">
+                <svg class="profile-form__icon-phone" width="20" height="20">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+              </span>
             </p>
           </div>
         </fieldset>
-        <fieldset class="profile-form__comments input-form__set">
+        <!-- <fieldset class="profile-form__comments input-form__set">
           <div class="container">
             <h3 class="profile-form__subject subject-title"><span>Комментарий</span></h3>
             <p class="profile-form__control input-form__group">
