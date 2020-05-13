@@ -1,6 +1,7 @@
 .product__info {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   width: 140px;
 
   @include md-size {
@@ -48,6 +49,7 @@
 
 .product__details {
   @include font-family($secondary-font, "Tahoma");
+  width: 100%;
   color: $dark-grey-color;
 
   font-size: 12px;

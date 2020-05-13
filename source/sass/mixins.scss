@@ -27,7 +27,7 @@
 }
 
 @mixin container {
-  width: $small-size;
+  min-width: $small-size;
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;

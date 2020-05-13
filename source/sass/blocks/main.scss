@@ -1,11 +1,15 @@
-.main_title {
+.main__title {
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 27px;
+  margin-top: 14px;
+  margin-bottom: 14px;
   color: $black-color-primary;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
+
+  &--catalog {
+    margin-bottom: 28px;
+  }
 
   @include md-size {
     margin-top: 55px;

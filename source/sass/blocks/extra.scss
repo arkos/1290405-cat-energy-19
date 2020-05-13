@@ -1,0 +1,109 @@
+.extra {
+  padding-top: 15px;
+  padding-bottom: 34px;
+}
+
+.extra__wrapper {
+  @include container();
+}
+
+.extra__title {
+  padding-top: 12px;
+  padding-bottom: 33px;
+}
+
+.extra__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.extra__item {
+  padding-top: 15px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid $border-color-3;
+
+  &:first-child {
+    border-top: 1px solid $border-color-3;
+  }
+}
+
+.extra__name {
+  margin: 0;
+  color: $black-color-secondary;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.extra__content {
+  display: flex;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.extra__description {
+  @include font-family($secondary-font, "Tahoma");
+  width: 50%;
+  margin: 0;
+  color: $dark-grey-color;
+  font-size: 14px;
+}
+
+.extra__price {
+  @include font-family($secondary-font, "Tahoma");
+  width: 50%;
+  color: $dark-grey-color;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: right;
+}
+
+.extra__action {
+  padding-top: 11px;
+  padding-right: 111px;
+  padding-bottom: 10px;
+  padding-left: 110px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.extra__promo {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 39px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  background-color: $primary-color;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 56px;
+    height: 61px;
+    margin-top: 48px;
+    background-image: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.extra__promo-title {
+  @include font-family($secondary-font, "Tahoma");
+  margin: 0;
+  margin-top: 61px;
+  color: $white-color;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}

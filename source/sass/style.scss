@@ -13,6 +13,9 @@
 /* utils */
 @import "utils.scss";
 
+/* outline */
+@import "outline.scss";
+
 /* header */
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
@@ -22,17 +25,26 @@
 
 // TODO: button paddings should be set in block elements
 @import "blocks/button.scss";
+@import "blocks/field.scss";
 @import "blocks/main.scss";
 @import "blocks/intro.scss";
 @import "blocks/promo.scss";
 @import "blocks/programs.scss";
 @import "blocks/advantages.scss";
 @import "blocks/container.scss";
+@import "blocks/example.scss";
+@import "blocks/slider.scss";
+@import "blocks/contact-us.scss";
 
 /* catalog */
 @import "blocks/catalog.scss";
 @import "blocks/product.scss";
 @import "blocks/show-more.scss";
+@import "blocks/extra.scss";
+@import "blocks/subject-title.scss";
+
+/* form */
+@import "blocks/profile-form.scss";
 
 /* footer */
 @import "blocks/footer.scss";

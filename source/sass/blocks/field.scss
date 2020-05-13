@@ -1,0 +1,121 @@
+.field {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  &--with-icon {
+    position: relative;
+  }
+}
+
+.field__label,
+.field__input {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.field__label {
+  flex-shrink: 0;
+  color: $black-color-secondary;
+
+  &--input {
+    margin-right: 15px;
+  }
+
+  &--name {
+    margin-right: 11px;
+  }
+
+  &--select {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-left: 45px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &--email {
+    margin-right: 11px;
+  }
+
+  &--phone {
+    margin-right: 9px;
+  }
+}
+
+.field__input {
+  flex-grow: 1;
+  width: 100%;
+  min-width: 0;
+  padding-top: 11px;
+  padding-right: 15px;
+  padding-bottom: 9px;
+  padding-left: 15px;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+  color: $dark-grey-color;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &--icon {
+    padding-right: 45px;
+  }
+
+  &--comments {
+    padding-top: 13px;
+    padding-right: 12px;
+    padding-bottom: 9px;
+    padding-left: 14px;
+  }
+}
+
+.field__icon-holder {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translate(0, -50%);
+}
+
+.field__icon-holder--email {
+  width: 17px;
+  height: 13px;
+}
+
+.field__select + .field__label--select::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $border-color-3;
+}
+
+.field__select--radio + .field__label--select::before {
+  border-radius: 50%;
+}
+
+.field__select--radio:checked + .field__label--select::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $primary-color;
+}
+
+.field__select--checkbox:checked + .field__label--select::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  width: 22px;
+  height: 17px;
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
