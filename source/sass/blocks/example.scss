@@ -1,7 +1,7 @@
 .example {
-  background-color: $light-grey-color;
   padding-top: 15px;
   padding-bottom: 15px;
+  background-color: $light-grey-color;
 }
 
 .example__wrapper {
@@ -10,21 +10,21 @@
 }
 
 .example__title {
-  font-size: 36px;
-  line-height: 60px;
-  font-weight: 400;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 27px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
 }
 
 .example__description {
   @include font-family($secondary-font, "Tahoma");
-  font-size: 14px;
-  line-height: 18px;
   margin: 0;
   margin-bottom: 25px;
   padding-right: 10px;
   color: $dark-grey-color;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .example__list {
@@ -33,54 +33,53 @@
 }
 
 .example__item {
-  width: 124px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  width: 124px;
 }
 
 .example__item-description {
   @include font-family($secondary-font, "Tahoma");
-  font-size: 12px;
-  text-transform: lowercase;
-  text-align: center;
+  z-index: 10;
+  width: 90px;
   margin: 0;
+  margin-top: -18px;
   padding-top: 8px;
+  padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-  padding-right: 10px;
-  width: 90px;
-  margin-top: -15px;
-  z-index: 10;
   background-color: $light-grey-color;
   color: $dark-grey-color;
+  font-size: 12px;
+  text-align: center;
+  text-transform: lowercase;
 }
 
 .example__item-amount {
-  font-size: 24px;
-  text-transform: uppercase;
-  text-align: center;
-  border: 1px solid $border-color-3;
-  border-radius: 3px;
+  width: 100%;
+  margin: 0;
   padding-top: 12px;
+  padding-right: 15px;
   padding-bottom: 18px;
   padding-left: 15px;
-  padding-right: 15px;
-  margin: 0;
-
-  width: 100%;
+  border: 1px solid $border-color-3;
+  border-radius: 3px;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .example__total {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding-top: 8px;
+  padding-bottom: 5px;
   font-size: 14px;
   line-height: 20px;
-  text-transform: uppercase;
-  display: flex;
   text-align: center;
-  justify-content: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .example__total-text {
