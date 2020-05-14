@@ -54,6 +54,7 @@
   padding-bottom: 9px;
   padding-left: 15px;
   border: 1px solid rgba(205, 205, 205, 0.5);
+  outline: none;
   color: $dark-grey-color;
   font-size: 16px;
   line-height: 18px;
@@ -69,6 +70,20 @@
     padding-bottom: 9px;
     padding-left: 14px;
   }
+
+  &:hover {
+    border-color: rgba(205, 205, 205, 1);
+  }
+
+  &:focus,
+  &:active {
+    border: 2px solid $dark-grey-color;
+  }
+
+  &:invalid {
+    border: 2px solid $error-color;
+    box-shadow: none;
+  }
 }
 
 .field__icon-holder {
@@ -78,9 +93,19 @@
   transform: translate(0, -50%);
 }
 
-.field__icon-holder--email {
-  width: 17px;
-  height: 13px;
+.field__input--icon + .field__icon-holder .field__icon {
+  fill: $black-color-secondary;
+}
+
+.field__input--icon:active + .field__icon-holder .field__icon,
+.field__input--icon:focus + .field__icon-holder .field__icon {
+  fill: $primary-color;
+}
+
+.field__input--icon:invalid + .field__icon-holder .field__icon,
+.field__input--icon:active:invalid + .field__icon-holder .field__icon,
+.field__input--icon:focus:invalid + .field__icon-holder .field__icon {
+  fill: $error-color;
 }
 
 .field__select + .field__label--select::before {
@@ -91,6 +116,16 @@
   width: 30px;
   height: 30px;
   border: 1px solid $border-color-3;
+}
+
+.field__select + .field__label--select {
+  &:hover::before {
+    border-color: $grey-color-bababa;
+  }
+}
+
+.field__select:active + .field__label--select {
+  opacity: 0.3;
 }
 
 .field__select--radio + .field__label--select::before {

@@ -59,11 +59,11 @@
             <div class="profile-form__details-list">
               <p class="profile-form__details-item field">
                 <label class="field__label field__label--input field__label--name" for="name-field">Имя:*</label>
-                <input class="field__input" type="text" id="name-field" name="name" placeholder="Барсик">
+                <input class="field__input" type="text" id="name-field" name="name" placeholder="Барсик" required>
               </p>
               <p class="profile-form__details-item field">
                 <label class="field__label field__label--input" for="weight-field">Вес (кг):*</label>
-                <input class="field__input" type="text" id="weight-field" name="weight" placeholder="7">
+                <input class="field__input" type="text" id="weight-field" name="weight" placeholder="7" required>
               </p>
               <p class="profile-form__details-item field">
                 <label class="field__label field__label--input" for="age-field">Возраст (лет):</label>
@@ -100,9 +100,9 @@
             <p class="profile-form__contact-item field field--with-icon">
               <label class="field__label field__label--input field__label--email" for="email-field">E-mail:*</label>
               <input class="field__input field__input--icon field__input--email" type="email" id="email-field"
-                name="email" placeholder="kuklachev@gmail.com">
+                name="email" placeholder="kuklachev@gmail.com" required>
               <span class="field__icon-holder">
-                <svg class="profile-form__icon-email" width="17" height="13">
+                <svg class="field__icon" width="17" height="13">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
               </span>
@@ -110,9 +110,9 @@
             <p class="profile-form__contact-item field field--with-icon">
               <label class="field__label field__label--input field__label--phone" for="phone-field">Телефон:*</label>
               <input class="field__input field__input--icon field__input--phone" type="tel" id="phone-field"
-                name="phone" placeholder="8 (960) 900-60-90">
+                name="phone" placeholder="8 (960) 900-60-90" pattern="\d{1}\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}" required>
               <span class="field__icon-holder">
-                <svg class="profile-form__icon-phone" width="20" height="20">
+                <svg class="field__icon" width="20" height="20">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
               </span>
