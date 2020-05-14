@@ -13,6 +13,11 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @include md-size() {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .field__label {
@@ -56,9 +61,6 @@
   border: 1px solid rgba(205, 205, 205, 0.5);
   outline: none;
   color: $dark-grey-color;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
 
   &--icon {
     padding-right: 45px;
