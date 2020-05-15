@@ -113,6 +113,10 @@
     height: 3px;
 
     background: $primary-color;
+
+    @include md-size() {
+      width: 30px;
+    }
   }
 
   &::before {
@@ -166,6 +170,11 @@
 .profile-form__comments-list {
   @include container();
   margin-top: 34px;
+
+  @include md-size() {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 
 .profile-form__extra {
