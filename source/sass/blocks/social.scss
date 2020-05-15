@@ -10,8 +10,9 @@
   list-style: none;
 
   @include md-size {
-    margin: 0;
+    justify-content: stretch;
     width: 200px;
+    margin: 0;
   }
 }
 

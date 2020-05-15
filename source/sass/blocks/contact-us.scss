@@ -56,6 +56,10 @@
 .contact-us__map-wrapper {
   position: relative;
   width: 100%;
+
+  @include md-size() {
+    height: 400px;
+  }
 }
 
 .contact-us__map {
@@ -63,6 +67,10 @@
   z-index: 2;
   width: 100%;
   border: none;
+
+  @include md-size() {
+    height: 400px;
+  }
 }
 
 .contact-us__map-image {
