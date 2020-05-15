@@ -33,7 +33,7 @@
   }
 
   &--name {
-    margin-right: 11px;
+    margin-right: 13px;
 
     @include md-size() {
       margin-right: 16px;
@@ -55,13 +55,22 @@
 
   &--email {
     margin-right: 11px;
+
+    @include md-size() {
+      margin-right: 21px;
+    }
   }
 
   &--phone {
     margin-right: 9px;
+
+    @include md-size() {
+      margin-right: 14px;
+    }
   }
 
   &--weight {
+    margin-right: 17px;
     @include md-size() {
       margin-right: 20px;
     }
@@ -101,6 +110,12 @@
     padding-right: 12px;
     padding-bottom: 9px;
     padding-left: 14px;
+
+    @include md-size() {
+      padding-top: 14px;
+      padding-bottom: 18px;
+      padding-left: 18px;
+    }
   }
 
   &:hover {
