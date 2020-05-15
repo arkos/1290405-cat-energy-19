@@ -104,16 +104,16 @@
   }
 
   &:hover {
-    border-color: rgba(205, 205, 205, 1);
+    outline-color: rgba(205, 205, 205, 1);
   }
 
   &:focus,
   &:active {
-    border: 2px solid $dark-grey-color;
+    outline: 2px solid $dark-grey-color;
   }
 
   &:invalid {
-    border: 2px solid $error-color;
+    outline: 2px solid $error-color;
     box-shadow: none;
   }
 }
