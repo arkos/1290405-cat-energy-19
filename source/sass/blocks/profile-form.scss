@@ -101,6 +101,7 @@
 
   @include md-size() {
     font-size: 36px;
+    padding-left: 0;
   }
 
   &::before,
@@ -118,13 +119,13 @@
     display: none;
     @include md-size() {
       display: block;
-      margin-right: 20px;
+      margin-right: 40px;
     }
   }
 
   &::after {
     flex-grow: 2;
-    margin-left: 20px;
+    margin-left: 40px;
   }
 }
 
@@ -139,6 +140,11 @@
 .profile-form__contact-list {
   @include container();
   margin-top: 32px;
+
+  @include md-size() {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 
 .profile-form__contact-item {
