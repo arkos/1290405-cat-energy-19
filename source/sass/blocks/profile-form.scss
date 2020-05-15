@@ -10,6 +10,8 @@
   @include md-size() {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -24,6 +26,17 @@
 .profile-form__details-list,
 .profile-form__option-list {
   @include container();
+
+  @include md-size() {
+    width: 100%;
+  }
+}
+
+.profile-form__details-list {
+  @include md-size() {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .profile-form__details-item {
@@ -42,6 +55,18 @@
   border-right: none;
   border-left: none;
   border-color: $border-color-2;
+
+  @include md-size() {
+    border-left: 1px solid $border-color-2;
+    border-right: 1px solid $border-color-2;
+  }
+}
+
+.profile-form__option-list {
+  @include md-size() {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .profile-form__option-item {
@@ -170,6 +195,13 @@
   @include md-size() {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.profile-form__wrapper {
+  @include md-size() {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 
