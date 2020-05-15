@@ -1,233 +1,231 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  </head>
 
-<body>
-  <div style="display: none">
-    <include src="build/img/sprite.svg"></include>
-  </div>
-  <header class="header header--nav-closed header--no-js">
-    <div class="header__wrapper">
-      <div class="header__logo-wrapper">
-        <a class="header__logo" href="index.html">
-          <picture>
-            <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
-            <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-            <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт энерджи">
-          </picture>
-        </a>
-        <button class="header__nav-toggle" aria-label="Открыть меню"></button>
+  <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="header header--nav-closed header--no-js">
+      <div class="header__wrapper">
+        <div class="header__logo-wrapper">
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+              <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+              <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
+                alt="Логотип Кэт энерджи">
+            </picture>
+          </a>
+          <button class="header__nav-toggle" aria-label="Открыть меню"></button>
+        </div>
+        <nav class="header__nav nav">
+          <div class="nav__wrapper">
+            <ul class="nav__menu site-list">
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link site-list__item--active">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <nav class="header__nav nav">
-        <div class="nav__wrapper">
-          <ul class="nav__menu site-list">
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="index.html">Главная</a>
+    </header>
+    <main class="main">
+      <div class="container">
+        <h1 class="main__title">Подбор программы</h1>
+      </div>
+      <section class="profile-form">
+        <div class="container">
+          <h2 class="visually-hidden">Анкета подбора программы</h2>
+          <p class="profile-form__notes">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
+        </div>
+        <form class="profile-form__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="profile-form__wrapper">
+            <fieldset class="profile-form__details">
+              <h3 class="visually-hidden">Данные кота</h3>
+              <div class="profile-form__details-list">
+                <p class="profile-form__details-item field">
+                  <label class="field__label field__label--input field__label--name" for="name-field">Имя:*</label>
+                  <input class="field__input" type="text" id="name-field" name="name" placeholder="Барсик" required>
+                </p>
+                <p class="profile-form__details-item field">
+                  <label class="field__label field__label--input" for="weight-field">Вес (кг):*</label>
+                  <input class="field__input" type="text" id="weight-field" name="weight" placeholder="7" required>
+                </p>
+                <p class="profile-form__details-item field">
+                  <label class="field__label field__label--input" for="age-field">Возраст (лет):</label>
+                  <input class="field__input" type="text" id="age-field" name="age" placeholder="7">
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="profile-form__options">
+              <h3 class="visually-hidden">Выберите программу</h3>
+              <div class="profile-form__option-list">
+                <p class="profile-form__option-item field">
+                  <input class="visually-hidden field__select field__select--radio" type="radio" id="slim-field"
+                    value="slim" name="program" checked>
+                  <label class="field__label field__label--select" for="slim-field">Похудение</label>
+                </p>
+                <p class="profile-form__option-item field">
+                  <input class="visually-hidden field__select field__select--radio" type="radio" id="pro-field"
+                    value="pro" name="program">
+                  <label class="field__label field__label--select" for="pro-field">Набор массы</label>
+                </p>
+                <p class="profile-form__option-item field">
+                  <input class="visually-hidden field__select field__select--radio" type="radio" id="advise-field"
+                    value="advise" name="program">
+                  <label class="field__label field__label--select" for="advise-field">Не знаю (Нужен ваш совет)</label>
+                </p>
+              </div>
+            </fieldset>
+          </div>
+          <fieldset class="profile-form__contact-details">
+            <h3 class="profile-form__subject">Контактные данные<br> (владельца кота)</h3>
+            <div class="profile-form__contact-list">
+              <p class="profile-form__contact-item field field--with-icon">
+                <label class="field__label field__label--input field__label--email" for="email-field">E-mail:*</label>
+                <input class="field__input field__input--icon field__input--email" type="email" id="email-field"
+                  name="email" placeholder="kuklachev@gmail.com" required>
+                <span class="field__icon-holder">
+                  <svg class="field__icon" width="17" height="13">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
+                </span>
+              </p>
+              <p class="profile-form__contact-item field field--with-icon">
+                <label class="field__label field__label--input field__label--phone" for="phone-field">Телефон:*</label>
+                <input class="field__input field__input--icon field__input--phone" type="tel" id="phone-field"
+                  name="phone" placeholder="8 (960) 900-60-90" pattern="\d{1}\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}" required>
+                <span class="field__icon-holder">
+                  <svg class="field__icon" width="20" height="20">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
+                </span>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="profile-form__comments">
+            <h3 class="profile-form__subject">Комментарий</h3>
+            <div class="profile-form__comments-list">
+              <p class="profile-form__comments-item field">
+                <label class="visually-hidden" for="comments-field">Расскажите обо всех повадках кота</label>
+                <textarea class="field__input field__input--no-label field__input--comments" name="comments"
+                  id="comments-field" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="profile-form__extra">
+            <h3 class="profile-form__subject">Дополнительно</h3>
+            <div class="profile-form__extra-list">
+              <p class="profile-form__extra-item field">
+                <input class="visually-hidden field__select field__select--checkbox" type="checkbox" id="sugar-field"
+                  value="sugar" name="extra-sugar" checked>
+                <label class="field__label field__label--select" for="sugar-field">Сахарозаменитель</label>
+              </p>
+              <p class="profile-form__extra-item field">
+                <input class="visually-hidden field__select field__select--checkbox" type="checkbox" id="water-field"
+                  value="water" name="extra-water">
+                <label class="field__label field__label--select" for="water-field">Питьевая вода</label>
+              </p>
+              <p class="profile-form__extra-item field">
+                <input class="visually-hidden field__select field__select--checkbox" type="checkbox" id="milk-field"
+                  value="milk" name="extra-milk">
+                <label class="field__label field__label--select" for="milk-field">Молоко</label>
+              </p>
+              <p class="profile-form__extra-item field">
+                <input class="visually-hidden field__select field__select--checkbox" type="checkbox" id="vitamins-field"
+                  value="vitamins" name="extra-vitamins">
+                <label class="field__label field__label--select" for="vitamins-field">Витамины</label>
+              </p>
+            </div>
+            <div class="profile-form__bottom-wrapper">
+              <button class="profile-form__button button" type="submit">Отправить заявку</button>
+              <p class="profile-form__subtitle"><sup>*</sup> — Обязательные поля</p>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <section class="contact-us">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <div class="contact-us__wrapper contact-us__wrapper--dark">
+          <p class="contact-us__welcome">приглашаем<br> к сотрудничеству дилеров!</p>
+          <address class="contact-us__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+        </div>
+        <div class="contact-us__map-wrapper">
+          <iframe class="contact-us__map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715584492!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sil!4v1588425985259!5m2!1sen!2sil"
+            width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x"
+              media="(min-width: 768px)">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x"
+              media="(min-width: 320px)">
+            <source srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x" media="(min-width: 1300px)">
+            <source srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img class="contact-us__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+              width="320" height="362" alt="Магазин по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" />
+          </picture>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__link-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
+          </a>
+        </div>
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__item-link social__item-link--vkontakte" href="#" aria-label="Мы в ВКонтакте">
+                <svg class="social__icon-vkontakte" width="22" height="12">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
+            <li class="social__item">
+              <a class="social__item-link social__item-link--instagram" href="#" aria-label="Мы в Инстаграме">
+                <svg class="social__icon-instagram" width="17" height="17">
+                  <use xlink:href="#icon-insta"></use>
+                </svg>
+              </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link site-list__item--active">Подбор программы</a>
+            <li class="social__item">
+              <a class="social__item-link social__item-link--facebook" href="#" aria-label="Мы в Фейсбуке">
+                <svg class="social__icon-facebook" width="10" height="19">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
-  </header>
-  <main class="main">
-    <div class="container">
-      <h1 class="main__title">Подбор программы</h1>
-    </div>
-    <section class="profile-form">
-      <div class="container">
-        <h2 class="visually-hidden">Анкета подбора программы</h2>
-        <p class="profile-form__notes">Заполните анкету и мы подберем<br>
-          программу питания для вашего кота</p>
-      </div>
-      <form class="profile-form__form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="profile-form__wrapper">
-          <fieldset class="profile-form__details">
-            <h3 class="visually-hidden">Данные кота</h3>
-            <div class="profile-form__details-list">
-              <p class="profile-form__details-item field">
-                <label class="field__label field__label--input field__label--name" for="name-field">Имя:*</label>
-                <input class="field__input" type="text" id="name-field" name="name" placeholder="Барсик" required>
-              </p>
-              <p class="profile-form__details-item field">
-                <label class="field__label field__label--input" for="weight-field">Вес (кг):*</label>
-                <input class="field__input" type="text" id="weight-field" name="weight" placeholder="7" required>
-              </p>
-              <p class="profile-form__details-item field">
-                <label class="field__label field__label--input" for="age-field">Возраст (лет):</label>
-                <input class="field__input" type="text" id="age-field" name="age" placeholder="7">
-              </p>
-            </div>
-          </fieldset>
-          <fieldset class="profile-form__options">
-            <h3 class="visually-hidden">Выберите программу</h3>
-            <div class="profile-form__option-list">
-              <p class="profile-form__option-item field">
-                <input class="visually-hidden field__select field__select--radio" type="radio" id="slim-field"
-                  value="slim" name="program" checked>
-                <label class="field__label field__label--select" for="slim-field">Похудение</label>
-              </p>
-              <p class="profile-form__option-item field">
-                <input class="visually-hidden field__select field__select--radio" type="radio" id="pro-field"
-                  value="pro" name="program">
-                <label class="field__label field__label--select" for="pro-field">Набор массы</label>
-              </p>
-              <p class="profile-form__option-item field">
-                <input class="visually-hidden field__select field__select--radio" type="radio" id="advise-field"
-                  value="advise" name="program">
-                <label class="field__label field__label--select" for="advise-field">Не знаю (Нужен ваш
-                  совет)</label>
-              </p>
-            </div>
-          </fieldset>
+        <div class="footer__copyright copyright">
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy <svg
+              class="copyright__icon-academy" width="27" height="34">
+              <use xlink:href="#icon-academy"></use>
+            </svg>
+          </a>
         </div>
-        <fieldset class="profile-form__contact-details">
-          <h3 class="profile-form__subject">Контактные данные<br>
-            (владельца кота)</h3>
-          <div class="profile-form__contact-list">
-            <p class="profile-form__contact-item field field--with-icon">
-              <label class="field__label field__label--input field__label--email" for="email-field">E-mail:*</label>
-              <input class="field__input field__input--icon field__input--email" type="email" id="email-field"
-                name="email" placeholder="kuklachev@gmail.com" required>
-              <span class="field__icon-holder">
-                <svg class="field__icon" width="17" height="13">
-                  <use xlink:href="#icon-mail"></use>
-                </svg>
-              </span>
-            </p>
-            <p class="profile-form__contact-item field field--with-icon">
-              <label class="field__label field__label--input field__label--phone" for="phone-field">Телефон:*</label>
-              <input class="field__input field__input--icon field__input--phone" type="tel" id="phone-field"
-                name="phone" placeholder="8 (960) 900-60-90" pattern="\d{1}\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}" required>
-              <span class="field__icon-holder">
-                <svg class="field__icon" width="20" height="20">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
-              </span>
-            </p>
-          </div>
-        </fieldset>
-        <fieldset class="profile-form__comments">
-          <h3 class="profile-form__subject">Комментарий</h3>
-          <div class="profile-form__comments-list">
-            <p class="profile-form__comments-item field">
-              <label class="visually-hidden" for="comments-field">Расскажите обо всех повадках кота</label>
-              <textarea class="field__input field__input--no-label field__input--comments" name="comments"
-                id="comments-field" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </p>
-          </div>
-        </fieldset>
-        <fieldset class="profile-form__extra">
-          <h3 class="profile-form__subject">Дополнительно</h3>
-          <div class="profile-form__extra-list">
-            <p class="profile-form__extra-item field">
-              <input class="visually-hidden field__select field__select--checkbox" type="checkbox" id="sugar-field"
-                value="sugar" name="extra-sugar" checked>
-              <label class="field__label field__label--select" for="sugar-field">Сахарозаменитель</label>
-            </p>
-            <p class="profile-form__extra-item field">
-              <input class="visually-hidden field__select field__select--checkbox" type="checkbox" id="water-field"
-                value="water" name="extra-water">
-              <label class="field__label field__label--select" for="water-field">Питьевая вода</label>
-            </p>
-            <p class="profile-form__extra-item field">
-              <input class="visually-hidden field__select field__select--checkbox" type="checkbox" id="milk-field"
-                value="milk" name="extra-milk">
-              <label class="field__label field__label--select" for="milk-field">Молоко</label>
-            </p>
-            <p class="profile-form__extra-item field">
-              <input class="visually-hidden field__select field__select--checkbox" type="checkbox" id="vitamins-field"
-                value="vitamins" name="extra-vitamins">
-              <label class="field__label field__label--select" for="vitamins-field">Витамины</label>
-            </p>
-          </div>
-          <div class="profile-form__bottom-wrapper">
-            <button class="profile-form__button button" type="submit">Отправить заявку</button>
-            <p class="profile-form__subtitle"><sup>*</sup> — Обязательные поля</p>
-          </div>
-        </fieldset>
-      </form>
-    </section>
-    <section class="contact-us">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <div class="contact-us__wrapper contact-us__wrapper--dark">
-        <p class="contact-us__welcome">приглашаем<br> к сотрудничеству дилеров!</p>
-        <address class="contact-us__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
       </div>
-      <div class="contact-us__map-wrapper">
-        <iframe class="contact-us__map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715584492!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sil!4v1588425985259!5m2!1sen!2sil"
-          width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
-        <picture>
-          <source type="image/webp" media="(min-width: 1300px)"
-            srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-          <source type="image/webp" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x"
-            media="(min-width: 768px)">
-          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x"
-            media="(min-width: 320px)">
-          <source srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x" media="(min-width: 1300px)">
-          <source srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x" media="(min-width: 768px)">
-          <img class="contact-us__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
-            width="320" height="362" alt="Магазин по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" />
-        </picture>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <div class="footer__logo logo">
-        <a class="logo__link" href="index.html">
-          <img class="logo__link-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи">
-        </a>
-      </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__item-link social__item-link--vkontakte" href="#" aria-label="Мы в ВКонтакте">
-              <svg class="social__icon-vkontakte" width="22" height="12">
-                <use xlink:href="#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__item-link social__item-link--instagram" href="#" aria-label="Мы в Инстаграме">
-              <svg class="social__icon-instagram" width="17" height="17">
-                <use xlink:href="#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__item-link social__item-link--facebook" href="#" aria-label="Мы в Фейсбуке">
-              <svg class="social__icon-facebook" width="10" height="19">
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright copyright">
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy <svg
-            class="copyright__icon-academy" width="27" height="34">
-            <use xlink:href="#icon-academy"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
-  <script src="js/script.min.js"></script>
-</body>
+    </footer>
+    <script src="js/script.min.js"></script>
+  </body>
 
 </html>
