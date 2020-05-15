@@ -7,6 +7,11 @@
   padding-bottom: 25px;
   padding-left: 20px;
 
+  @include md-size() {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+
   &--dark {
     background-color: $light-grey-color;
   }
@@ -36,6 +41,7 @@
   @include md-size() {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
   }
 }
 
