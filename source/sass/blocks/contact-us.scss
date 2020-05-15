@@ -10,6 +10,7 @@
   @include md-size() {
     padding-top: 63px;
     padding-right: 70px;
+    padding-bottom: 59px;
     padding-left: 70px;
   }
 
@@ -43,6 +44,12 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+}
+
+.contact-us__house {
+  @include md-size() {
+    margin-bottom: 18px;
   }
 }
 
