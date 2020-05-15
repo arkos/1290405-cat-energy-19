@@ -63,7 +63,7 @@
 
   &--weight {
     @include md-size() {
-      margin-right: 18px;
+      margin-right: 20px;
     }
   }
 
@@ -87,7 +87,7 @@
   color: $dark-grey-color;
 
   @include md-size() {
-    padding-top: 9px;
+    padding-top: 11px;
     padding-right: 19px;
     padding-left: 19px;
   }
