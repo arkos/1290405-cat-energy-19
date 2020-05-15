@@ -166,7 +166,7 @@
 
   @include md-size() {
     top: -9px;
-    left: -2px;
+    left: -1px;
     width: 40px;
     height: 40px;
   }
@@ -212,4 +212,9 @@
   background-image: url("../../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @include md-size() {
+    top: 2px;
+    left: 9px;
+  }
 }
