@@ -133,6 +133,7 @@
     background: $primary-color;
 
     @include md-size() {
+      top: 22px;
       width: 30px;
     }
   }
@@ -157,6 +158,10 @@
   padding-top: 30px;
   padding-bottom: 15px;
   border: none;
+
+  @include md-size() {
+    padding-top: 50px;
+  }
 }
 
 .profile-form__contact-list {
@@ -241,6 +246,7 @@
 
 .profile-form__wrapper {
   @include md-size() {
+    margin-bottom: 26px;
     padding-right: 70px;
     padding-left: 70px;
   }
