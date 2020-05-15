@@ -26,10 +26,18 @@
 
   &--input {
     margin-right: 15px;
+
+    @include md-size() {
+      margin-right: 16px;
+    }
   }
 
   &--name {
     margin-right: 11px;
+
+    @include md-size() {
+      margin-right: 16px;
+    }
   }
 
   &--select {
@@ -39,6 +47,10 @@
     padding-left: 45px;
     cursor: pointer;
     user-select: none;
+
+    @include md-size() {
+      padding-left: 57px;
+    }
   }
 
   &--email {
@@ -47,6 +59,18 @@
 
   &--phone {
     margin-right: 9px;
+  }
+
+  &--weight {
+    @include md-size() {
+      margin-right: 18px;
+    }
+  }
+
+  &--age {
+    @include md-size() {
+      margin-right: 18px;
+    }
   }
 }
 
@@ -61,6 +85,12 @@
   border: 1px solid rgba(205, 205, 205, 0.5);
   outline: none;
   color: $dark-grey-color;
+
+  @include md-size() {
+    padding-top: 9px;
+    padding-right: 19px;
+    padding-left: 19px;
+  }
 
   &--icon {
     padding-right: 45px;
@@ -118,6 +148,13 @@
   width: 30px;
   height: 30px;
   border: 1px solid $border-color-3;
+
+  @include md-size() {
+    top: -9px;
+    left: -2px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .field__select + .field__label--select {
@@ -143,6 +180,11 @@
   height: 12px;
   border-radius: 50%;
   background-color: $primary-color;
+
+  @include md-size() {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .field__select--checkbox:checked + .field__label--select::after {
