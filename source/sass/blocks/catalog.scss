@@ -1,6 +1,7 @@
 .catalog {
   @include md-size {
     margin-top: 165px;
+    padding-bottom: 60px;
   }
 }
 
@@ -12,7 +13,6 @@
   @include md-size {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 60px;
   }
 }
 
