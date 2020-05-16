@@ -8,8 +8,42 @@
 }
 
 .extra__title {
+  display: flex;
+  margin: 0;
   padding-top: 12px;
   padding-bottom: 33px;
+  padding-left: 20px;
+  border: none;
+  font-size: 24px;
+  font-weight: 400;
+
+  @include md-size() {
+    font-size: 36px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: relative;
+    top: 13px;
+    width: 20px;
+    height: 3px;
+
+    background: $primary-color;
+  }
+
+  &::before {
+    display: none;
+    @include md-size() {
+      display: block;
+      margin-right: 20px;
+    }
+  }
+
+  &::after {
+    flex-grow: 2;
+    margin-left: 20px;
+  }
 }
 
 .extra__list {
