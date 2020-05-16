@@ -10,6 +10,10 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @include md-size() {
+    font-size: 20px;
+  }
 }
 
 .slider__scale {
