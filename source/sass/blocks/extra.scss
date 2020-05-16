@@ -11,6 +11,15 @@
   @include container();
 }
 
+.extra__info {
+  @include md-size() {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 14px;
+  }
+}
+
 .extra__title {
   display: flex;
   margin: 0;
@@ -22,8 +31,8 @@
   font-weight: 400;
 
   @include md-size() {
-    margin-bottom: 67px;
-    padding-top: 15px;
+    margin-bottom: 65px;
+    padding-top: 17px;
     padding-bottom: 15px;
     padding-left: 0;
     font-size: 36px;
@@ -40,7 +49,7 @@
     background: $primary-color;
 
     @include md-size() {
-      top: 24px;
+      top: 22px;
       width: 30px;
     }
   }
@@ -83,9 +92,9 @@
   }
 
   @include md-size() {
-    padding-top: 25px;
+    padding-top: 15px;
     padding-right: 38px;
-    padding-bottom: 28px;
+    padding-bottom: 26px;
     padding-left: 37px;
     border-right: 1px solid;
     border-left: 1px solid;
@@ -102,6 +111,7 @@
   text-transform: uppercase;
 
   @include md-size() {
+    margin-left: 2px;
     font-size: 20px;
   }
 }
@@ -111,6 +121,11 @@
   margin-bottom: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  @include md-size() {
+    padding-top: 4px;
+    padding-bottom: 3px;
+  }
 }
 
 .extra__description {
@@ -121,8 +136,11 @@
   font-size: 14px;
 
   @include md-size() {
+    width: 200px;
+    margin-right: 43px;
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
   }
 }
 
@@ -135,6 +153,7 @@
   text-align: right;
 
   @include md-size() {
+    width: 50px;
     font-size: 16px;
     line-height: 20px;
   }
