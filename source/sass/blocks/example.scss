@@ -5,6 +5,7 @@
 
   @include md-size() {
     padding-top: 42px;
+    background-color: $white-color;
   }
 }
 
@@ -90,6 +91,7 @@
 
   @include md-size() {
     width: auto;
+    background-color: $white-color;
     font-size: 14px;
     text-align: left;
   }
