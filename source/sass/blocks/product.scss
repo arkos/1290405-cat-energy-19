@@ -5,6 +5,7 @@
   width: 140px;
 
   @include md-size {
+    align-items: center;
     width: 325px;
     margin-top: 15px;
     padding-right: 37px;
