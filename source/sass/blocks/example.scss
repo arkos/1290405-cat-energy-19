@@ -2,6 +2,10 @@
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: $light-grey-color;
+
+  @include md-size() {
+    padding-top: 42px;
+  }
 }
 
 .example__wrapper {
@@ -17,6 +21,7 @@
   line-height: 60px;
 
   @include md-size() {
+    margin-bottom: 64px;
     font-size: 60px;
   }
 }
@@ -31,8 +36,16 @@
   line-height: 18px;
 
   @include md-size() {
+    margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.example__info {
+  @include md-size() {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -46,6 +59,17 @@
   flex-direction: column-reverse;
   align-items: center;
   width: 124px;
+
+  &:last-child {
+    @include md-size() {
+      margin-right: 0;
+    }
+  }
+
+  @include md-size() {
+    width: auto;
+    margin-right: 42px;
+  }
 }
 
 .example__item-description {
@@ -65,7 +89,9 @@
   text-transform: lowercase;
 
   @include md-size() {
+    width: auto;
     font-size: 14px;
+    text-align: left;
   }
 }
 
@@ -83,6 +109,9 @@
   text-transform: uppercase;
 
   @include md-size() {
+    width: auto;
+    min-width: 162px;
+    padding-top: 15px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -100,6 +129,8 @@
   text-transform: uppercase;
 
   @include md-size() {
+    flex-direction: column;
+    margin-bottom: 20px;
     font-size: 20px;
   }
 }
@@ -107,8 +138,17 @@
 .example__total-text {
   margin: 0;
   margin-right: 5px;
+
+  @include md-size() {
+    margin-top: 2px;
+    margin-right: 0;
+  }
 }
 
 .example__total-count {
   font-weight: 400;
+  @include md-size() {
+    margin-top: 11px;
+    text-align: right;
+  }
 }
