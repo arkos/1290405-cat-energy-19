@@ -332,6 +332,14 @@
     padding-bottom: 14px;
     padding-left: 70px;
   }
+
+  @include lg-size() {
+    @include container();
+    justify-content: space-between;
+    margin-top: 27px;
+    padding-top: 38px;
+    padding-bottom: 21px;
+  }
 }
 
 .profile-form__extra-item {
@@ -351,8 +359,22 @@
     margin-bottom: 52px;
   }
 
+  @include lg-size() {
+    width: 244px;
+    margin-right: auto;
+  }
+
   &:nth-child(2n) {
     @include md-size() {
+      margin-right: 0;
+    }
+    @include lg-size() {
+      margin-right: auto;
+    }
+  }
+
+  &:nth-child(4n) {
+    @include lg-size() {
       margin-right: 0;
     }
   }
@@ -375,6 +397,15 @@
     padding-left: 60px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @include lg-size() {
+    width: 568px;
+    margin-right: 21px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 24px;
   }
 }
 
@@ -402,5 +433,9 @@
     align-items: center;
     padding-right: 70px;
     padding-left: 70px;
+  }
+
+  @include lg-size() {
+    @include container();
   }
 }
