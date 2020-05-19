@@ -5,6 +5,7 @@
 
   @include md-size() {
     padding-top: 42px;
+    padding-bottom: 0;
     background-color: $white-color;
   }
 }
@@ -12,6 +13,10 @@
 .example__wrapper {
   @include container();
   padding-bottom: 20px;
+
+  @include md-size() {
+    padding-bottom: 0;
+  }
 }
 
 .example__title {
