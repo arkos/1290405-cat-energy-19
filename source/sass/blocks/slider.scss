@@ -7,7 +7,7 @@
     align-items: center;
     margin-right: -30px;
     margin-left: -30px;
-    padding-bottom: 54px;
+    padding-bottom: 50px;
   }
 
   &::after {
@@ -18,9 +18,13 @@
       right: 0;
       bottom: 0;
       left: 0;
-      height: 420px;
+      height: 462px;
 
-      background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+      background: linear-gradient(
+        to right,
+        #f2f2f2 50%,
+        $example-gradient-color 50%
+      );
     }
   }
 
@@ -89,8 +93,15 @@
 
   @include md-size() {
     margin-left: 0;
+    padding-bottom: 5px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
     font-size: 20px;
+  }
+
+  &:hover {
+    @include md-size() {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
   }
 
   &--left {
@@ -143,8 +154,21 @@
     border: 1px solid $border-color-3;
     border-radius: 50%;
     background-color: $white-color;
-    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
+  }
+
+  &:hover {
+    @include md-size {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &:active {
+    @include md-size {
+      border: 2px solid $primary-color;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
   }
 
   &:before {
