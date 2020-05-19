@@ -1,3 +1,9 @@
+.contact-us {
+  @include lg-size() {
+    position: relative;
+  }
+}
+
 .contact-us__wrapper {
   @include container();
   display: flex;
@@ -15,8 +21,22 @@
     padding-left: 70px;
   }
 
+  @include lg-size() {
+    position: absolute;
+    z-index: 10;
+    top: 94px;
+    left: 110px;
+    width: 570px;
+    padding-right: 76px;
+    padding-left: 76px;
+  }
+
   &--dark {
     background-color: $light-grey-color;
+
+    @include lg-size() {
+      background-color: $white-color;
+    }
   }
 }
 
@@ -30,6 +50,10 @@
   @include md-size() {
     font-size: 20px;
     line-height: 25px;
+  }
+
+  @include lg-size() {
+    margin-right: 81px;
   }
 }
 
@@ -45,6 +69,10 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  @include lg-size() {
+    text-align: left;
   }
 }
 
