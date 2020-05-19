@@ -154,6 +154,10 @@
       top: 22px;
       width: 30px;
     }
+
+    @include lg-size() {
+      width: 70px;
+    }
   }
 
   &::before {
@@ -217,6 +221,10 @@
     padding-top: 50px;
     padding-bottom: 30px;
   }
+
+  @include lg-size() {
+    padding-top: 44px;
+  }
 }
 
 .profile-form__contact-list {
@@ -228,6 +236,14 @@
     padding-right: 70px;
     padding-left: 70px;
   }
+
+  @include lg-size() {
+    @include container();
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 75px;
+    padding-left: 40px;
+  }
 }
 
 .profile-form__contact-item {
@@ -235,10 +251,19 @@
 
   &:last-child {
     margin-bottom: 0;
+    @include lg-size() {
+      margin-right: 0;
+    }
   }
 
   @include md-size() {
     margin-bottom: 20px;
+  }
+
+  @include lg-size() {
+    width: 568px;
+    margin-right: 80px;
+    margin-bottom: 0;
   }
 }
 
