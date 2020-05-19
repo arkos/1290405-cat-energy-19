@@ -116,6 +116,10 @@
       padding-bottom: 18px;
       padding-left: 18px;
     }
+
+    @include lg-size() {
+      padding-top: 16px;
+    }
   }
 
   &:hover {

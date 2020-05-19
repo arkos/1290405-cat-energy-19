@@ -288,6 +288,11 @@
     padding-right: 70px;
     padding-left: 70px;
   }
+
+  @include lg-size() {
+    @include container();
+    margin-top: 76px;
+  }
 }
 
 .profile-form__extra {
