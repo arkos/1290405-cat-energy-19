@@ -69,7 +69,9 @@
   }
 
   &--after {
+    display: none;
     @include md-size() {
+      display: block;
       clip: rect(auto, auto, auto, 345px);
     }
   }
