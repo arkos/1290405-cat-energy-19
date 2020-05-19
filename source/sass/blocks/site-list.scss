@@ -64,6 +64,10 @@
 
         background: $primary-color;
       }
+
+      @include lg-size() {
+        bottom: -4px;
+      }
     }
   }
 }
@@ -79,6 +83,10 @@
     padding-top: 10px;
     padding-bottom: 10px;
     color: $black-color-secondary;
+  }
+
+  @include lg-size() {
+    padding-bottom: 7px;
   }
 }
 

@@ -78,7 +78,7 @@
   }
 
   @include lg-size {
-    width: 205px;
+    width: 203px;
   }
 }
 
@@ -95,6 +95,9 @@
 .header__logo-image {
   @include md-size {
     display: block;
+  }
+  @include lg-size() {
+    width: 100%;
   }
 }
 
