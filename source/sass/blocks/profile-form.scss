@@ -253,6 +253,7 @@
     margin-bottom: 0;
     @include lg-size() {
       margin-right: 0;
+      margin-bottom: 20px;
     }
   }
 
@@ -263,7 +264,7 @@
   @include lg-size() {
     width: 568px;
     margin-right: 80px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -276,6 +277,10 @@
 
   @include md-size() {
     padding-top: 36px;
+  }
+
+  @include lg-size() {
+    padding-top: 17px;
   }
 }
 
@@ -305,6 +310,10 @@
   @include md-size() {
     padding-top: 49px;
     padding-bottom: 74px;
+  }
+
+  @include lg-size() {
+    padding-top: 52px;
   }
 }
 
