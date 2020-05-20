@@ -26,6 +26,10 @@
         $example-gradient-color 50%
       );
     }
+
+    @include lg-size() {
+      background: transparent;
+    }
   }
 
   @include md-size() {
@@ -35,6 +39,11 @@
     margin-right: -30px;
     margin-left: -30px;
     overflow: hidden;
+  }
+
+  @include lg-size() {
+    margin: 0;
+    padding: 0;
   }
 }
 

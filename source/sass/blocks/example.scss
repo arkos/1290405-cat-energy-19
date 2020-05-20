@@ -11,6 +11,14 @@
 
   @include lg-size() {
     padding-top: 22px;
+    padding-bottom: 57px;
+    background-image: linear-gradient(
+        to bottom,
+        $white-color 158px,
+        158px,
+        transparent
+      ),
+      linear-gradient(to right, #f2f2f2 71.8%, #eaeaea 28.2%);
   }
 }
 
@@ -20,6 +28,17 @@
 
   @include md-size() {
     padding-bottom: 0;
+  }
+
+  @include lg-size() {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__content {
+  @include lg-size() {
+    width: 430px;
   }
 }
 
@@ -70,6 +89,7 @@
 
   @include lg-size() {
     flex-direction: column;
+    margin-bottom: 0;
   }
 }
 
@@ -121,6 +141,10 @@
     background-color: $white-color;
     font-size: 14px;
     text-align: left;
+  }
+
+  @include lg-size() {
+    background-color: $light-grey-color;
   }
 }
 
