@@ -36,6 +36,7 @@
 
   @include lg-size {
     width: 245px;
+    min-width: auto;
     margin-right: 80px;
   }
 
