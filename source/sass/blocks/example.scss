@@ -32,13 +32,13 @@
 
   @include lg-size() {
     display: flex;
-    justify-content: space-between;
   }
 }
 
 .example__content {
   @include lg-size() {
-    width: 430px;
+    width: 560px;
+    margin-right: 129px;
   }
 }
 
