@@ -11,14 +11,14 @@
 
   @include lg-size() {
     padding-top: 22px;
-    padding-bottom: 57px;
+    padding-bottom: 50px;
     background-image: linear-gradient(
         to bottom,
         $white-color 158px,
         158px,
         transparent
       ),
-      linear-gradient(to right, #f2f2f2 71.8%, #eaeaea 28.2%);
+      linear-gradient(to right, #f2f2f2 72.8%, #eaeaea 27.2%);
   }
 }
 
@@ -32,6 +32,7 @@
 
   @include lg-size() {
     display: flex;
+    justify-content: space-between;
   }
 }
 
