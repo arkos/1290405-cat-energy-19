@@ -126,12 +126,12 @@
   }
 }
 
-.profile-form__contact {
+.profile-form__contact-inner {
   padding-left: 0;
-}
 
-.profile-form__contact-inner span {
-  margin-left: 20px;
+  &::after {
+    margin-left: 20px;
+  }
 }
 
 .profile-form__contact-details {
@@ -206,6 +206,10 @@
   @include lg-size() {
     padding-top: 17px;
   }
+}
+
+.profile-form__comments-inner {
+  padding-left: 0;
 }
 
 .profile-form__comments-list {
