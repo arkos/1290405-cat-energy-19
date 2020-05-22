@@ -246,6 +246,10 @@
   }
 }
 
+.profile-form__extra-title {
+  padding-left: 0;
+}
+
 .profile-form__extra-list {
   @include container();
   margin-top: 41px;
