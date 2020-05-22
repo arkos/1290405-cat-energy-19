@@ -6,6 +6,7 @@
   @include md-size() {
     padding-top: 42px;
     padding-bottom: 0;
+    border: 1px solid $border-color-1;
     background: linear-gradient(
         to bottom,
         $white-color 620px,
@@ -200,6 +201,7 @@
     margin: 0;
     margin-top: 25px;
     padding: 20px 0;
+    padding-bottom: 76px;
     text-align: left;
   }
 }
