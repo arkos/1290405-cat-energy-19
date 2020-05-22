@@ -412,6 +412,8 @@
 
 .profile-form__wrapper {
   @include md-size() {
+    width: 768px;
+    margin: 0 auto;
     margin-bottom: 26px;
     padding-right: 70px;
     padding-left: 70px;
