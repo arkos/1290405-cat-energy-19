@@ -131,7 +131,7 @@
     outline: 2px solid $dark-grey-color;
   }
 
-  &:invalid {
+  &:not(:placeholder-shown):invalid {
     outline: 2px solid $error-color;
     box-shadow: none;
   }
