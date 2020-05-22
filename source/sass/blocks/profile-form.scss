@@ -130,13 +130,25 @@
   padding-right: 0;
   padding-left: 0;
 
+  @include md-size() {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
   &::after {
     margin-left: 20px;
+    @include md-size() {
+      margin-left: 0;
+    }
   }
 }
 
-.profile-form__contact-inner span {
+.profile-form__contact-text {
   display: block;
+
+  @include md-size() {
+    display: inline;
+  }
 }
 
 .profile-form__contact-details {
@@ -215,6 +227,11 @@
 
 .profile-form__comments-inner {
   padding-left: 0;
+
+  @include md-size() {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
 
 .profile-form__comments-list {
@@ -251,8 +268,13 @@
   }
 }
 
-.profile-form__extra-title {
+.profile-form__extra-inner {
   padding-left: 0;
+
+  @include md-size() {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
 
 .profile-form__extra-list {
