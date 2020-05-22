@@ -127,11 +127,16 @@
 }
 
 .profile-form__contact-inner {
+  padding-right: 0;
   padding-left: 0;
 
   &::after {
     margin-left: 20px;
   }
+}
+
+.profile-form__contact-inner span {
+  display: block;
 }
 
 .profile-form__contact-details {
