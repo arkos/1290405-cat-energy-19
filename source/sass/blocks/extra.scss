@@ -40,6 +40,12 @@
 
   padding-top: 12px;
   padding-bottom: 33px;
+
+  @include md-size() {
+    margin-bottom: 65px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+  }
 }
 
 // TODO: Adding responsive
@@ -52,6 +58,12 @@
   font-size: 24px;
   font-weight: 400;
 
+  @include md-size() {
+    padding-right: 30px;
+    padding-left: 37px;
+    font-size: 36px;
+  }
+
   &::before,
   &::after {
     content: "";
@@ -61,6 +73,10 @@
     width: 9999px;
     height: 3px;
     background: $primary-color;
+
+    @include md-size() {
+      top: 55%;
+    }
   }
 
   &::before {
