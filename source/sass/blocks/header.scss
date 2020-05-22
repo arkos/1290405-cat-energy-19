@@ -67,6 +67,10 @@
     margin: 0;
     padding: 0;
   }
+
+  @include lg-size {
+    width: auto;
+  }
 }
 
 .header__logo {
