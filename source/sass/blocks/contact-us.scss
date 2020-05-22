@@ -12,7 +12,6 @@
     padding-top: 63px;
     padding-bottom: 59px;
   }
-
   @include lg-size() {
     position: absolute;
     z-index: 10;
@@ -21,6 +20,7 @@
     width: 570px;
     padding-right: 76px;
     padding-left: 76px;
+    background-color: $white-color;
   }
 
   &--dark {
@@ -44,6 +44,13 @@
     margin: 0 auto;
     padding-right: 70px;
     padding-left: 70px;
+  }
+
+  @include lg-size() {
+    width: auto;
+    margin: auto;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
