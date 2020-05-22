@@ -41,7 +41,7 @@
 }
 
 .contact-us__welcome {
-  width: 50%;
+  width: 140px;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
@@ -59,7 +59,7 @@
 
 .contact-us__address {
   @include font-family($secondary-font, "Tahoma");
-  width: 50%;
+  width: 140px;
   color: $dark-grey-color;
   font-size: 14px;
   font-style: normal;
