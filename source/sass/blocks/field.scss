@@ -144,16 +144,17 @@
   transform: translate(0, -50%);
 }
 
-.field__input--icon + .field__icon-holder .field__icon {
-  fill: $black-color-secondary;
-}
+// .field__input--icon + .field__icon-holder .field__icon {
+//   fill: $black-color-secondary;
+// }
 
 .field__input--icon:active + .field__icon-holder .field__icon,
 .field__input--icon:focus + .field__icon-holder .field__icon {
   fill: $primary-color;
 }
 
-.field__input--icon:invalid + .field__icon-holder .field__icon,
+/* prettier-ignore */
+.field__input--icon:not(:placeholder-shown):invalid  + .field__icon-holder .field__icon,
 .field__input--icon:active:invalid + .field__icon-holder .field__icon,
 .field__input--icon:focus:invalid + .field__icon-holder .field__icon {
   fill: $error-color;
