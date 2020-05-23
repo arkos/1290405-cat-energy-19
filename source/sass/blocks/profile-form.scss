@@ -231,6 +231,12 @@
   }
 }
 
+.profile-form__comments-title {
+  @include lg-size() {
+    padding-left: 0;
+  }
+}
+
 .profile-form__comments-inner {
   padding-left: 0;
 
@@ -271,6 +277,12 @@
   @include lg-size() {
     padding-top: 52px;
     padding-bottom: 84px;
+  }
+}
+
+.profile-form__extra-title {
+  @include lg-size() {
+    padding-left: 0;
   }
 }
 
