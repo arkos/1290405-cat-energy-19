@@ -6,7 +6,7 @@
   @include md-size() {
     padding-top: 42px;
     padding-bottom: 0;
-    border: 1px solid $border-color-1;
+    border-top: 1px solid $border-color-1;
     background: linear-gradient(
         to bottom,
         $white-color 620px,
@@ -20,6 +20,7 @@
   @include lg-size() {
     padding-top: 22px;
     padding-bottom: 0;
+    border-top: none;
     background-image: linear-gradient(
         to bottom,
         $white-color 158px,
