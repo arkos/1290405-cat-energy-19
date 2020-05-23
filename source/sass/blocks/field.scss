@@ -91,8 +91,9 @@
   padding-right: 15px;
   padding-bottom: 9px;
   padding-left: 15px;
-  border: 1px solid rgba(205, 205, 205, 0.5);
-  outline: none;
+  border: none;
+  outline: 1px solid rgba(205, 205, 205, 0.5);
+  box-shadow: none;
   color: $dark-grey-color;
 
   @include md-size() {
@@ -122,18 +123,17 @@
     }
   }
 
+  &:invalid {
+    outline: 2px solid $error-color;
+  }
+
   &:hover {
-    outline-color: rgba(205, 205, 205, 1);
+    outline: 1px solid rgba(205, 205, 205, 1);
   }
 
   &:focus,
   &:active {
     outline: 2px solid $dark-grey-color;
-  }
-
-  &:not(:placeholder-shown):invalid {
-    outline: 2px solid $error-color;
-    box-shadow: none;
   }
 }
 
@@ -144,20 +144,19 @@
   transform: translate(0, -50%);
 }
 
-// .field__input--icon + .field__icon-holder .field__icon {
-//   fill: $black-color-secondary;
-// }
+/* prettier-ignore */
+.field__input--icon:invalid  + .field__icon-holder .field__icon {
+  fill: $error-color;
+}
+
+.field__input--icon + .field__icon-holder .field__icon,
+.field__input--icon:hover + .field__icon-holder .field__icon {
+  fill: $black-color-secondary;
+}
 
 .field__input--icon:active + .field__icon-holder .field__icon,
 .field__input--icon:focus + .field__icon-holder .field__icon {
   fill: $primary-color;
-}
-
-/* prettier-ignore */
-.field__input--icon:not(:placeholder-shown):invalid  + .field__icon-holder .field__icon,
-.field__input--icon:active:invalid + .field__icon-holder .field__icon,
-.field__input--icon:focus:invalid + .field__icon-holder .field__icon {
-  fill: $error-color;
 }
 
 .field__select + .field__label--select::before {
