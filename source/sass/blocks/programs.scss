@@ -224,12 +224,6 @@
 .programs__wrapper {
   @include container();
 
-  @include md-size {
-    width: auto;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
   @include lg-size {
     width: $large-size;
     margin: 0 auto;

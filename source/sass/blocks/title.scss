@@ -1,0 +1,45 @@
+.title {
+  @include container();
+}
+
+.title__inner {
+  position: relative;
+  width: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 24px;
+  font-weight: 400;
+
+  @include md-size() {
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 36px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 3px;
+    background: $primary-color;
+
+    @include md-size() {
+      top: 55%;
+    }
+  }
+
+  &::before {
+    display: none;
+    right: 100%;
+
+    @include md-size() {
+      display: block;
+    }
+  }
+  &::after {
+    left: 100%;
+  }
+}

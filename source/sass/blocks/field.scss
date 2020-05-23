@@ -13,6 +13,11 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @include md-size() {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .field__label {
@@ -21,10 +26,18 @@
 
   &--input {
     margin-right: 15px;
+
+    @include md-size() {
+      margin-right: 16px;
+    }
   }
 
   &--name {
-    margin-right: 11px;
+    margin-right: 13px;
+
+    @include md-size() {
+      margin-right: 16px;
+    }
   }
 
   &--select {
@@ -34,14 +47,39 @@
     padding-left: 45px;
     cursor: pointer;
     user-select: none;
+
+    @include md-size() {
+      padding-left: 57px;
+    }
   }
 
   &--email {
     margin-right: 11px;
+
+    @include md-size() {
+      margin-right: 21px;
+    }
   }
 
   &--phone {
     margin-right: 9px;
+
+    @include md-size() {
+      margin-right: 14px;
+    }
+  }
+
+  &--weight {
+    margin-right: 17px;
+    @include md-size() {
+      margin-right: 20px;
+    }
+  }
+
+  &--age {
+    @include md-size() {
+      margin-right: 18px;
+    }
   }
 }
 
@@ -54,10 +92,14 @@
   padding-bottom: 9px;
   padding-left: 15px;
   border: 1px solid rgba(205, 205, 205, 0.5);
+  outline: none;
   color: $dark-grey-color;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+
+  @include md-size() {
+    padding-top: 11px;
+    padding-right: 19px;
+    padding-left: 19px;
+  }
 
   &--icon {
     padding-right: 45px;
@@ -68,6 +110,30 @@
     padding-right: 12px;
     padding-bottom: 9px;
     padding-left: 14px;
+
+    @include md-size() {
+      padding-top: 14px;
+      padding-bottom: 18px;
+      padding-left: 18px;
+    }
+
+    @include lg-size() {
+      padding-top: 16px;
+    }
+  }
+
+  &:hover {
+    outline-color: rgba(205, 205, 205, 1);
+  }
+
+  &:focus,
+  &:active {
+    outline: 2px solid $dark-grey-color;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    outline: 2px solid $error-color;
+    box-shadow: none;
   }
 }
 
@@ -78,9 +144,20 @@
   transform: translate(0, -50%);
 }
 
-.field__icon-holder--email {
-  width: 17px;
-  height: 13px;
+// .field__input--icon + .field__icon-holder .field__icon {
+//   fill: $black-color-secondary;
+// }
+
+.field__input--icon:active + .field__icon-holder .field__icon,
+.field__input--icon:focus + .field__icon-holder .field__icon {
+  fill: $primary-color;
+}
+
+/* prettier-ignore */
+.field__input--icon:not(:placeholder-shown):invalid  + .field__icon-holder .field__icon,
+.field__input--icon:active:invalid + .field__icon-holder .field__icon,
+.field__input--icon:focus:invalid + .field__icon-holder .field__icon {
+  fill: $error-color;
 }
 
 .field__select + .field__label--select::before {
@@ -91,6 +168,23 @@
   width: 30px;
   height: 30px;
   border: 1px solid $border-color-3;
+
+  @include md-size() {
+    top: -9px;
+    left: -1px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.field__select + .field__label--select {
+  &:hover::before {
+    border-color: $grey-color-bababa;
+  }
+}
+
+.field__select:active + .field__label--select {
+  opacity: 0.3;
 }
 
 .field__select--radio + .field__label--select::before {
@@ -106,6 +200,11 @@
   height: 12px;
   border-radius: 50%;
   background-color: $primary-color;
+
+  @include md-size() {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .field__select--checkbox:checked + .field__label--select::after {
@@ -118,4 +217,9 @@
   background-image: url("../../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @include md-size() {
+    top: 2px;
+    left: 9px;
+  }
 }

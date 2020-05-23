@@ -75,13 +75,13 @@
             <h3 class="programs__item-title">Похудение</h3>
             <p class="programs__item-description"> Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес. </p>
-            <a href="#" class="programs__item-link">Каталог Slim</a>
+            <a href="programs.html#slim" class="programs__item-link">Каталог Slim</a>
           </li>
           <li class="programs__item programs__item--pro">
             <h3 class="programs__item-title">Набор массы</h3>
             <p class="programs__item-description"> Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы! </p>
-            <a href="#" class="programs__item-link">Каталог Pro</a>
+            <a href="programs.html#pro" class="programs__item-link">Каталог Pro</a>
           </li>
         </ul>
       </div>
@@ -110,63 +110,69 @@
     </section>
     <section class="example">
       <div class="example__wrapper">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
-          по 16 часов в день.</p>
-        <div class="example__list">
-          <div class="example__item">
-            <p class="example__item-description">снижение веса</p>
-            <p class="example__item-amount">5 кг</p>
+        <div class="example__content">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+            по 16 часов в день.</p>
+          <div class="example__info">
+            <div class="example__list">
+              <div class="example__item">
+                <p class="example__item-description">снижение веса</p>
+                <p class="example__item-amount">5 кг</p>
+              </div>
+              <div class="example__item">
+                <p class="example__item-description">затрачено времени</p>
+                <p class="example__item-amount">60 дней</p>
+              </div>
+            </div>
+            <div class="example__total">
+              <p class="example__total-text">Затраты на питание:</p>
+              <b class="example__total-count">15 000 руб.</b>
+            </div>
           </div>
-          <div class="example__item">
-            <p class="example__item-description">затрачено времени</p>
-            <p class="example__item-amount">60 дней</p>
-          </div>
-        </div>
-        <div class="example__total">
-          <p class="example__total-text">Затраты на питание:</p>
-          <b class="example__total-count">15 000 руб.</b>
         </div>
         <div class="slider">
           <input type="radio" id="toggle-before" name="toggle-slide"
-            class="visually-hidden slider__toggle slider__toggle--before" checked>
+            class="visually-hidden slider__toggle slider__toggle--before">
           <input type="radio" id="toggle-after" name="toggle-slide"
             class="visually-hidden slider__toggle slider__toggle--after">
-          <div class="slider__image slider__image--before">
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x"
-                media="(min-width: 768px)">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x"
-                media="(min-width: 320px)">
-              <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1300px)">
-              <source srcset="img/before-tablet@1x.jpg 1x, img/before-tablet@2x.jpg 2x" media="(min-width: 768px)">
-              <img class="slider__image-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
-                width="320" height="240" alt="Изображение кота до похудения" />
-            </picture>
-          </div>
-          <div class="slider__image slider__image--after">
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x"
-                media="(min-width: 768px)">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x"
-                media="(min-width: 320px)">
-              <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1300px)">
-              <source srcset="img/after-tablet@1x.jpg 1x, img/after-tablet@2x.jpg 2x" media="(min-width: 768px)">
-              <img class="slider__image-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
-                width="320" height="240" alt="Изображение кота до похудения" />
-            </picture>
+          <div class="slider__gallery">
+            <div class="slider__image slider__image--before">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x"
+                  media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x"
+                  media="(min-width: 320px)">
+                <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img class="slider__image-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
+                  width="320" height="240" alt="Изображение кота до похудения" />
+              </picture>
+            </div>
+            <div class="slider__image slider__image--after">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x"
+                  media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x"
+                  media="(min-width: 320px)">
+                <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img class="slider__image-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
+                  width="320" height="240" alt="Изображение кота после похудения" />
+              </picture>
+            </div>
           </div>
           <div class="slider__controls">
-            <label for="toggle-before" class="slider__text">Было</label>
+            <label for="toggle-before" class="slider__text slider__text--left">Было</label>
             <div class="slider__scale">
               <div class="slider__bar"></div>
             </div>
-            <label for="toggle-after" class="slider__text">Стало</label>
+            <label for="toggle-after" class="slider__text slider__text--right">Стало</label>
           </div>
         </div>
       </div>
@@ -174,14 +180,25 @@
     <section class="contact-us">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <div class="contact-us__wrapper">
-        <p class="contact-us__welcome">приглашаем<br> к сотрудничеству дилеров!</p>
-        <address class="contact-us__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
+        <div class="contact-us__content">
+          <p class="contact-us__welcome">приглашаем<br> к сотрудничеству<br> дилеров!</p>
+          <address class="contact-us__address">
+            <div class="contact-us__street">
+              ул. Большая
+            </div>
+            <div class="contact-us__house">
+              Конюшенная, д. 19/8
+            </div>
+            <div class="contact-us__city">
+              Санкт-Петербург
+            </div>
+          </address>
+        </div>
       </div>
       <div class="contact-us__map-wrapper">
         <iframe class="contact-us__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.320858715584492!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sil!4v1588425985259!5m2!1sen!2sil"
-          width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
+          width="320" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <picture>
           <source type="image/webp" media="(min-width: 1300px)"
             srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">

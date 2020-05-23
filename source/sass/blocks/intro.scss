@@ -56,10 +56,10 @@
 }
 
 .intro__button {
-  width: 280px;
-  margin: 0 auto;
   margin-top: 136px;
+  margin-right: 20px;
   margin-bottom: 20px;
+  margin-left: 20px;
 
   @include md-size {
     position: relative;
