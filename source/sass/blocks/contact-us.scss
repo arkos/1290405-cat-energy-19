@@ -13,14 +13,17 @@
     padding-bottom: 59px;
   }
   @include lg-size() {
-    position: absolute;
-    z-index: 10;
-    top: 94px;
-    left: 110px;
-    width: 570px;
-    padding-right: 76px;
-    padding-left: 76px;
-    background-color: $white-color;
+    // position: relative;
+    // z-index: 10;
+    // top: 94px;
+    // left: 110px;
+    // width: 570px;
+    // padding-right: 76px;
+    // padding-left: 76px;
+    // background-color: $white-color;
+    @include container();
+    position: relative;
+    padding: 0;
   }
 
   &--dark {
@@ -47,10 +50,16 @@
   }
 
   @include lg-size() {
-    width: auto;
-    margin: auto;
-    padding-right: 0;
-    padding-left: 0;
+    position: absolute;
+    z-index: 20;
+    top: 95px;
+    left: 40px;
+    width: 570px;
+    padding-top: 63px;
+    padding-right: 76px;
+    padding-bottom: 59px;
+    padding-left: 76px;
+    background-color: $white-color;
   }
 }
 
