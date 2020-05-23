@@ -44,6 +44,11 @@
     padding-top: 17px;
     padding-bottom: 15px;
   }
+
+  @include lg-size() {
+    padding-top: 26px;
+    padding-left: 0;
+  }
 }
 
 .extra__title-inner {
@@ -58,6 +63,10 @@
     @include md-size() {
       top: 55%;
     }
+  }
+
+  @include lg-size() {
+    padding-left: 40px;
   }
 }
 
