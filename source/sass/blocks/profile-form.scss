@@ -126,6 +126,12 @@
   }
 }
 
+.profile-form__contact {
+  @include lg-size() {
+    padding-left: 0;
+  }
+}
+
 .profile-form__contact-inner {
   padding-right: 0;
   padding-left: 0;
