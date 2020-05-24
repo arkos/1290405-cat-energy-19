@@ -182,6 +182,12 @@
   }
 }
 
+.field__select:focus + .field__label--select {
+  &::before {
+    border-color: $grey-color-bababa;
+  }
+}
+
 .field__select:active + .field__label--select {
   opacity: 0.3;
 }
